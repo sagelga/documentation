@@ -4,7 +4,7 @@ module.exports = {
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#title
    */
-  title: "sagelga's documentation",
+  title: "sagelga's Documentation",
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#description
    */
@@ -27,32 +27,23 @@ module.exports = {
    * ref：https://v1.vuepress.vuejs.org/theme/default-theme-config.html
    */
   themeConfig: {
-    repo: '',
+    repo: 'sagelga',
     editLinks: false,
     docsDir: '',
     editLinkText: '',
-    lastUpdated: false,
+    lastUpdated: true,
     nav: [
       {
-        text: 'Documentation',
-        link: '/documentation/',
-      },
-      {
-        text: 'GitHub',
-        link: 'https://github.com/sagelga'
+        text: 'Home',
+        link: '/'
       }
+      // {
+      //   text: 'GitHub',
+      //   link: 'https://github.com/sagelga'
+      // }
     ],
     sidebar: {
-      '/documentation/': [
-        {
-          title: 'Guide',
-          collapsable: false,
-          children: [
-            '',
-            'using-vue',
-          ]
-        }
-      ],
+        'approval-workflow': 'auto',
     }
   },
 

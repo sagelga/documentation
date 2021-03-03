@@ -14,3 +14,6 @@ I am currently using
     - Allows the website to be automatically built. No more manual build-and-commit anymore.
 
 and probably more. Very soon.
+
+# Build Status
+[![Vuepress Build and Deploy](https://github.com/sagelga/documentation/actions/workflows/vuepress-deploy.yml/badge.svg?branch=develop)](https://github.com/sagelga/documentation/actions/workflows/vuepress-deploy.yml)
