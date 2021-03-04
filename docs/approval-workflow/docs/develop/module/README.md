@@ -1,9 +1,9 @@
+# Order of module
+Each function will be separated by its functionality or part of work. Each function is mostly independent from each other, but might requires data (such as Object) to complete any transaction. 
+
 ::: tip NOTE
 This documentation only covers the JavaScript part of my script. Some of the objects (eg. sheets, spreadsheet or MailApp ) is made by Google itself. To use these object, please read Google Documentation for more information.
 :::
-
-# Order of module
-Each function will be separated by its functionality or part of work. Each function is mostly independent from each other, but might requires data (such as Object) to complete any transaction. 
 
 Function includes: 
 - `main` : contains core workflow. To edit the workflow, edit this file.
