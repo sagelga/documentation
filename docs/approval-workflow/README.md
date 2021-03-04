@@ -1,4 +1,4 @@
-# Bienvenu! Welcome!
+# Approval Workflow
 A new way of approval workflow, powered by Google Apps Script. This new way has their own flavor of how it works or calculate things, but follows the requirement of the original requirements.
 
 This is the approval workflow documentation, powered by Google Apps Script.
