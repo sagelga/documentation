@@ -2,7 +2,7 @@
 ## Install the script
 First thing you need to do is to install the script. The script will allows you to run the flow.
 1. Go to [https://github.com/sagelga/approval-workflow](https://github.com/sagelga/approval-workflow)
-    ![](/src/Screenshot 2021-03-04 180754.png)
+    ![](Screenshot 2021-03-04 180754.png)
 2. Select "Clone" (noticeable by the bright green button)
 3. Extract `.zip` file
 4. In `src/`, there will be multiple `.js` file. 
