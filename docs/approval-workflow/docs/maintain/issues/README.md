@@ -3,7 +3,7 @@
 If the workflow goes wrong, it will give one or more of of these signs of issue report :
 - Email(s) sent to admin (via the admin sending list) containing error code
 - Working status in 'My Executions' start turning "Timeout", "Suspended" or "Failed"
-- Working status inside of the core sheet returning incorrect result, not showing any result or the script stops before running through the last line of the request (run through the last request) 
+- Working status inside of the core sheet returning incorrect result, not showing any result or the script stops before running through the last line of the request (run through the last request)
 
 or you are suspecting of script malfunctioning, you can start looking at the execution debug terminal
 

@@ -12,5 +12,5 @@ For managers and FMA, you are required to approve a request. This is how you can
 8. Add some comments to the request (optional)
 9. Click 'Submit' button to submit your approval
     Make sure that the 'Bound to Response ID' is the same number as the email subject. It normally is the same number, but please make sure it does.
-10. Done! 
+10. Done!
     The request requester will automatically receive the notification when the approval process goes through.
