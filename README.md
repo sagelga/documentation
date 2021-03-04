@@ -16,4 +16,7 @@ I am currently using
 and probably more. Very soon.
 
 # Build Status
-[![Vuepress Build and Deploy](https://github.com/sagelga/documentation/actions/workflows/vuepress-deploy.yml/badge.svg?branch=develop)](https://github.com/sagelga/documentation/actions/workflows/vuepress-deploy.yml)
+## Vuepress
+|Lint|Build|Deploy|
+|-|-|-|
+|[![Vuepress Lint](https://github.com/sagelga/documentation/actions/workflows/vuepress-lint.yml/badge.svg)](https://github.com/sagelga/documentation/actions/workflows/vuepress-lint.yml)|[![Vuepress Build](https://github.com/sagelga/documentation/actions/workflows/vuepress-build.yml/badge.svg)](https://github.com/sagelga/documentation/actions/workflows/vuepress-build.yml)|[![Vuepress Deploy](https://github.com/sagelga/documentation/actions/workflows/vuepress-deploy.yml/badge.svg)](https://github.com/sagelga/documentation/actions/workflows/vuepress-deploy.yml)|
