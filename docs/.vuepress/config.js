@@ -1,4 +1,4 @@
-const { description } = require('../../package')
+const moment = require('moment');
 
 module.exports = {
   /**
@@ -27,23 +27,20 @@ module.exports = {
    * ref：https://v1.vuepress.vuejs.org/theme/default-theme-config.html
    */
   themeConfig: {
-    repo: 'sagelga',
+    repo: 'sagelga/documentation',
+    repoLabel: 'Github',
     editLinks: false,
-    docsDir: '',
+    docsDir: 'docs',
     editLinkText: '',
-    lastUpdated: true,
+    lastUpdated: 'Last Updated (UTC)',
+    searchPlaceholder: 'Search...',
     nav: [
       {
         text: 'Home',
         link: '/'
       }
-      // {
-      //   text: 'GitHub',
-      //   link: 'https://github.com/sagelga'
-      // }
     ],
     sidebar: {
-        'approval-workflow': 'auto',
     }
   },
 
@@ -53,5 +50,19 @@ module.exports = {
   plugins: [
     '@vuepress/plugin-back-to-top',
     '@vuepress/plugin-medium-zoom',
+    '@vuepress/nprogress',
+    'vuepress-plugin-smooth-scroll',
+    ['vuepress-plugin-copyright',
+      {
+        noCopy: true, // the selected text will be uncopiable
+        minLength: 10, // if its length is greater than 100
+      },],
+    ['@vuepress/last-updated',
+      {
+        dateOptions: {
+          hour12: false
+        },
+      },
+    ],
   ]
 }
