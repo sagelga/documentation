@@ -2,19 +2,19 @@ const moment = require('moment');
 
 module.exports = {
   /**
-   * Ref：https://v1.vuepress.vuejs.org/config/#title
-   */
+  * Ref：https://v1.vuepress.vuejs.org/config/#title
+  */
   title: "sagelga's",
   /**
-   * Ref：https://v1.vuepress.vuejs.org/config/#description
-   */
+  * Ref：https://v1.vuepress.vuejs.org/config/#description
+  */
   description: 'Documentation for everything repository',
 
   /**
-   * Extra tags to be injected to the page HTML `<head>`
-   *
-   * ref：https://v1.vuepress.vuejs.org/config/#head
-   */
+  * Extra tags to be injected to the page HTML `<head>`
+  *
+  * ref：https://v1.vuepress.vuejs.org/config/#head
+  */
   head: [
     ['meta', { name: 'theme-color', content: '#3eaf7c' }],
     ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
@@ -24,10 +24,10 @@ module.exports = {
   ],
 
   /**
-   * Theme configuration, here is the default theme configuration for VuePress.
-   *
-   * ref：https://v1.vuepress.vuejs.org/theme/default-theme-config.html
-   */
+  * Theme configuration, here is the default theme configuration for VuePress.
+  *
+  * ref：https://v1.vuepress.vuejs.org/theme/default-theme-config.html
+  */
   themeConfig: {
     repo: 'sagelga/documentation',
     repoLabel: 'Github',
@@ -54,13 +54,88 @@ module.exports = {
         link: '/trashmelody/'
       },
     ],
+
     sidebar: {
-    }
+      '/approval-workflow/': [
+        {
+          title: 'Documentation',
+          collapseable: false,
+          children: [
+            {
+              title: 'Overall',
+              path: '/approval-workflow/docs/overall/',
+              children: [
+                'docs/overall/requirement/',
+                'docs/overall/start/',
+                'docs/overall/run/',
+              ],
+            },
+            {
+              title: 'Develop',
+              path: '/approval-workflow/docs/develop/',
+              children: [
+                'docs/develop/',
+                'docs/develop/module/',
+              ],
+            },
+            {
+              title: 'Maintain',
+              path: '/approval-workflow/docs/maintain/',
+              children: [
+                'docs/maintain/issues/',
+              ],
+            },
+          ]
+        },
+        {
+          title: 'User Manual',
+          collapseable: false,
+          children: [
+            'manual/',
+          ]
+        },
+      ],
+      '/compro-project/': [
+        {
+          title: 'Overall',
+          collapseable: false,
+          children: [
+            '',
+            'proposal/',
+            'credits/',
+          ]
+        },
+        {
+          title: 'Getting Started',
+          collapseable: false,
+          children: [
+            'getting-start/requirement/',
+            'getting-start/installation/',
+            'getting-start/shortcut-keys/',
+          ]
+        },
+        {
+          title: 'Features',
+          collapseable: false,
+          children: [
+            'feature/access-management/',
+            'feature/forecast/',
+            'feature/inventory/',
+            'feature/login/',
+            'feature/loyalty/',
+            'feature/main-menu/',
+            'feature/report/',
+            'feature/sales/',
+            'feature/settings/',
+          ]
+        }
+      ],
+    },
   },
 
   /**
-   * Apply plugins，ref：https://v1.vuepress.vuejs.org/zh/plugin/
-   */
+  * Apply plugins，ref：https://v1.vuepress.vuejs.org/zh/plugin/
+  */
   plugins: [
     '@vuepress/plugin-back-to-top',
     '@vuepress/plugin-medium-zoom',

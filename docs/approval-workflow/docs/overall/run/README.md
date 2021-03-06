@@ -1,7 +1,3 @@
----
-sidebar: auto
-prev: ../start/
----
 # How the script runs
 ## Approval Status
 For each of the approval request, it will only contains one of the four status listed below
