@@ -1,7 +1,3 @@
----
-sidebar: auto
-next: ../start/
----
 # System Requirements
 To start and use this script, you will have to create/check whaever you qualified with the requirement or not. Here are the list of requirement you will need to start things up.
 

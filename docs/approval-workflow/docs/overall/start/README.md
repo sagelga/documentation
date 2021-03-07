@@ -1,8 +1,3 @@
----
-sidebar: auto
-prev: ../requirement/
-next: ../run/
----
 # Before you start
 Before you can start using the script, here's something you need to install and manually setup.
 
