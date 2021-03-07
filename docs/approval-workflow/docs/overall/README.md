@@ -1,4 +1,5 @@
 # Overall
 - [Requirement](./requirement)
 - [Start](./start)
-- [Run](./run)
+- [Install](./install)
+- [Status](./status)

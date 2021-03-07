@@ -1,4 +1,4 @@
-# Order of module
+# Function Module
 Each function will be separated by its functionality or part of work. Each function is mostly independent from each other, but might requires data (such as Object) to complete any transaction.
 
 ::: tip NOTE

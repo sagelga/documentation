@@ -66,8 +66,10 @@ module.exports = {
               path: '/approval-workflow/docs/overall/',
               children: [
                 'docs/overall/requirement/',
+                'docs/overall/install/',
                 'docs/overall/start/',
-                'docs/overall/run/',
+                'docs/overall/status/',
+                'docs/overall/how-it-works/',
               ],
             },
             {
@@ -75,6 +77,7 @@ module.exports = {
               path: '/approval-workflow/docs/develop/',
               children: [
                 'docs/develop/',
+                'docs/develop/configuration/',
                 'docs/develop/module/',
               ],
             },
