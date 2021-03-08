@@ -105,6 +105,7 @@ module.exports = {
               path: '/approval-workflow/docs/maintain/',
               children: [
                 'docs/maintain/issues/',
+                'docs/maintain/constraints/',
               ],
             },
           ]
