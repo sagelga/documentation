@@ -77,8 +77,27 @@ module.exports = {
               path: '/approval-workflow/docs/develop/',
               children: [
                 'docs/develop/',
-                'docs/develop/configuration/',
-                'docs/develop/module/',
+                {
+                  title: 'Configuration',
+                  path: '/approval-workflow/docs/develop/config/',
+                  children: [
+                    'docs/develop/config/config/',
+                    'docs/develop/config/response/',
+                  ],
+                },
+                {
+                  title: 'Module',
+                  path: '/approval-workflow/docs/develop/module/',
+                  children: [
+                    'docs/develop/module/main/',
+                    'docs/develop/module/functions/',
+                    'docs/develop/module/utility/',
+                    'docs/develop/module/sheets/',
+                    'docs/develop/module/sheetsInbound/',
+                    'docs/develop/module/email/',
+                    'docs/develop/module/email-function/',
+                  ],
+                },
               ],
             },
             {
