@@ -19,9 +19,9 @@ module.exports = {
     ['meta', { name: 'theme-color', content: '#3eaf7c' }],
     ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
     ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }],
-    // ['link', { rel: 'icon', href: '/logo.png' }]
-    ['link', { rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.css' }]
-  ],
+    ['link', { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Parisienne&display=swap' }],
+    ['link', { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.5.1/katex.min.css' }],
+    ['link', { rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/github-markdown-css/2.2.1/github-markdown.css' }]],
 
   /**
   * Theme configuration, here is the default theme configuration for VuePress.
@@ -176,5 +176,13 @@ module.exports = {
         },
       },
     ],
-  ]
+  ],
+
+  markdown: {
+    lineNumbers: true,
+    extendMarkdown: md => {
+      md.use(require("markdown-it-katex"));
+    }
+  },
+
 }
