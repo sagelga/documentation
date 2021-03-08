@@ -1,8 +1,6 @@
 # Start the script
 Here's some options you can run the script
 
-
-
 ### Option 1 Manually via UI
 1. Open the `sheet`
 </br>![](./src/firefox_rqrWTbHsaN.png)

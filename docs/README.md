@@ -9,3 +9,6 @@ This is a homepage for documentation. Select your preferred documentation page h
 
 ## Approval Workflow
 [approval-workflow](approval-workflow)
+
+## Point of Sales (compro-project)
+[compro-project](compro-project)

@@ -24,28 +24,33 @@ You can check each execution by going through the log created in 'My Executions'
 
 1. Go to [https://script.google.com/home/executions](https://script.google.com/home/executions)
 2. There will be a list of executed functions and information about that run.
-- Project : Google Script that runs the function
-- Function : Function name that gets run
-- Type : [Type of execution trigger]()
-- Start time : Time that triggers the function
-- Duration : Duration of the execution
-- Status : Status of that run
-- [Types of execution status]()
-
-![](./src/myExecutions.png)
-
+   - Project : Google Script that runs the function
+   - Function : Function name that gets run
+   - Type : Type of execution trigger
+   - Start time : Time that triggers the function
+   - Duration : Duration of the execution
+   - Status : Status of that run
+    ![](./src/myExecutions.png)
 3. When the script show its status as 'Failed', that execution will always create a Error Code for you to search on StackOverflow or any website that shows how to deal with that error code.
-<br>![](./src/errorMessage.png)
+   ![](./src/errorMessage.png)
 
 Simply copy the error description (in which this starts from 'Time out waiting for user response') without any words/location/function that cause this issue, and start looking at the dependent, dependency and the function itself for the cause of this issue.
-StackDriver Logs is a Google Apps Script way to create logs (including work status to confirm the task is being processed or creating errors)
-Read more at [https://developers.google.com/apps-script/guides/logging#stackdriver_logging](https://developers.google.com/apps-script/guides/logging#stackdriver_logging)
+
+StackDriver Logs is a Google Apps Script way to create logs (including work status to confirm the task is being processed or creating errors). Read more at [https://developers.google.com/apps-script/guides/logging#stackdriver_logging](https://developers.google.com/apps-script/guides/logging#stackdriver_logging)
 
 ## Time out issue
-System timeout is normally generated when the runtime of the current operation reaches 30 minutes (1800 second). Google will stop all process being calculated and will not doing anything.
-Tested with normal request, it takes 3 seconds to go around each row. In the other hand, leaving the system with 600 request to run at the same time can cause havoc and system timeout. But that large amount of request is quite 'not going to happen' , so you don't have to worry that much.
-System will restart the task and will not start from where its left (just for now) and fix the unfinished task based on the status it is currently on.
-Normally, dealing with the system timeout is nothing you can do much. What you can do is to improve it from 'not going timeout'. Here's some few examples you can try:
+System timeout is normally generated when the runtime of the current operation reaches 30 minutes (depends on [Google Apps Script quotas on script runtime](https://developers.google.com/apps-script/guides/services/quotas)). Google will halt all process when script takese to long to finish.
+
+But worry not, with plenty of time and chance to restart the task where it's left off will be immediete.
+
+### Improving runtime
+Improving a runtimes allows the script to work faster and also reducing the chance of the script works improperly.
+
+1. Check on what's taking too long.
+   - Most of the Request will takes at most 10 seconds. If your Response takes longer than that, make sure you investigate on the script. There might be something fishy in there.
+2. Remove old Approved Requests and Response
+   - Less data to be fetched always mean faster runtime.
+   - Also checks on data ingestion. Maybe there might be a missing letter in an email address field.
 
 ## Issues created by Constrains
 This is the list of all constraints that exist in the script. Make sure that you did not do things as following, as the data retrieval or update can create a bigger issue.

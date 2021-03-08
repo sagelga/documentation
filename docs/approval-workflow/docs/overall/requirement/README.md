@@ -50,10 +50,10 @@ Works as the Approval Response data ingestion for the script. This sheet will co
 ## Worksheet Column
 or `Required Column` in the script. This allows the script to understand and pull up the correct data column. In each `sheet`, there will be required column that will be either from generate or manually create. Here are the list of all required column that will be used by the script.
 
-|Sheet Name|Required Column|
-|:-:|-|
-|Sheet|<ul><li> Response ID</li><li> Step xx Status [replace xx with step number]</li><li> Step xx Comments [replace xx with step number]</li><li> Step xx Response Form URL [replace xx with step number]</li><li> Step xx Timestamp [replace xx with step number]</li><li> Skips Override</li><li> Timestamp (created automatically)</li></ul>|
-|Inbound Sheet|<ul><li>Bound to Response ID</li><li>Response Result</li><li>Comments</li><li>Timestamp (created automatically)</li><li>Email Address (created automatically)</li></ul>|
+|  Sheet Name   | Required Column                                                                                                                                                                                                                                                                                                                           |
+| :-----------: | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|     Sheet     | <ul><li> Response ID</li><li> Step xx Status [replace xx with step number]</li><li> Step xx Comments [replace xx with step number]</li><li> Step xx Response Form URL [replace xx with step number]</li><li> Step xx Timestamp [replace xx with step number]</li><li> Skips Override</li><li> Timestamp (created automatically)</li></ul> |
+| Inbound Sheet | <ul><li>Bound to Response ID</li><li>Response Result</li><li>Comments</li><li>Timestamp (created automatically)</li><li>Email Address (created automatically)</li></ul>                                                                                                                                                                   |
 
 You can choose one of the following ways to create these columns
 

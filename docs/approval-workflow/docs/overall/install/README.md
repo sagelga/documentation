@@ -1,6 +1,7 @@
-# Install the script
-*Tags: Github, Repository*
+# Setup
+*Tags: Github, Repository, Install, Setup, Sheets, Forms*
 
+## Installing
 Before you can start using the script, here's something you need to install and manually setup.
 
 First thing you need to do is to install the script. The script will allows you to run the flow.</br>
