@@ -4,11 +4,10 @@ heroImage: https://v1.vuepress.vuejs.org/hero.png
 tagline:
 footer: © 2021 Kunanon Srisuntiroj
 ---
-# Documentation Homepage
-This is a homepage for documentation. Select your preferred documentation page here.
+# Welcome!
+This is documentation site where all repository documentation stores.
+Since multiple documentation are stored individually, there is no chance of maintaining every documentation in an easy way.
 
-## Approval Workflow
-[approval-workflow](approval-workflow)
+Now, I have stored every documentation here, with full maintaining automations and easy to navigate interface.
 
-## Point of Sales (compro-project)
-[compro-project](compro-project)
+To get started, select the documentation you like to visit at the navigation bar above.
