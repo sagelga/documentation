@@ -61,7 +61,7 @@ module.exports = {
           children: [
             {
               title: 'Overall',
-              path: '/approval-workflow/docs/overall/',
+              path: '/approval-workflow/docs/overall/requirement',
               children: [
                 'docs/overall/requirement/',
                 'docs/overall/install/',
@@ -150,6 +150,112 @@ module.exports = {
             'feature/settings/',
           ]
         }
+      ],
+      '/panda/': [
+        {
+          title: 'Overall',
+          collapseable: false,
+          children: [
+            '',
+            'proposal/',
+            'credits/',
+          ]
+        },
+        {
+          title: 'Documentation',
+          collapseable: false,
+          children: [
+            {
+              title: 'Back-end',
+              collapseable: false,
+              children: [
+                'docs/back-end/apollo/',
+                'docs/back-end/session/',
+              ],
+            },
+            {
+              title: 'Front-end',
+              collapseable: false,
+              children: [
+                'docs/front-end/components/',
+                'docs/front-end/style-guide/',
+              ],
+            },
+            'docs/api/',
+          ]
+        },
+        {
+          title: 'User Manual',
+          collapseable: false,
+          path: '/panda/manual/',
+          children: [
+            {
+              title: 'Client',
+              collapseable: false,
+              children: [
+                'manual/client/cancel-request',
+                'manual/client/check-request',
+                'manual/client/find-space',
+                'manual/client/login',
+                'manual/client/logout',
+                'manual/client/report-problem',
+                'manual/client/reserve-space',
+                'manual/client/search-space',
+              ],
+            },
+            {
+              title: 'Approver',
+              collapseable: false,
+              children: [
+                'manual/approver/approve-request',
+                'manual/approver/decline-request',
+              ],
+            },
+            {
+              title: 'Admin',
+              collapseable: false,
+              children: [
+                'manual/admin/add-material',
+                'manual/admin/delete-material',
+                'manual/admin/add-role',
+                'manual/admin/delete-role',
+                'manual/admin/add-space',
+                'manual/admin/edit-space',
+                'manual/admin/delete-space',
+                'manual/admin/create-group',
+                'manual/admin/edit-group',
+              ],
+            },
+          ],
+        },
+      ],
+      '/trashmelody/': [
+        {
+          title: 'Overall',
+          collapseable: false,
+          path: '/trashmelody/',
+          children: [
+            'overall/requirement/',
+            'overall/install/',
+            'overall/rule/',
+            'overall/playlist/',
+          ]
+        },
+        {
+          title: 'Documentation',
+          collapseable: false,
+          children: [
+            {
+              title: 'API',
+              collapseable: false,
+              children: [
+                'docs/api/ResultScreen/',
+              ]
+            },
+            'docs/inheritance/',
+          ]
+        },
+        'credit/',
       ],
     },
   },
