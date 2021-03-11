@@ -16,24 +16,24 @@
 - คอลเล็กชั่นขยะ [Trash Collection](./basics/Trash-Collection)
 
 ## พื้นหลังการพัฒนาเกม
-- [Package Structure](./develop/Package-Structure) การจัดกลุ่ม Package
-- [Inheritance](./develop/Inheritance) การสืบทอดของโปรแกรม
-- [Game Assets](./develop/Game-Assets) ทรัพยากรของเกม
-- [Administration with BeatMaps + Core Game](./develop/Beat-Maps) การดูแล Beat Map และตัวเกมหลัก
-- [Settings and High Score](./develop/Settings) ข้อมูลการตั้งค่า และ คะแนน
-- [Troubleshooting Problems](./develop/Troubleshooting) การแก้ปัญหาเบื้องต้น
-- [Game Designs](./develop/Designs) ดีไซน์ของตัวเกม
+- การจัดกลุ่ม Package [Package Structure](./develop/Package-Structure)
+- การสืบทอดของโปรแกรม [Inheritance](./develop/Inheritance)
+- ทรัพยากรของเกม [Game Assets](./develop/Game-Assets)
+- การดูแล Beat Map และตัวเกมหลัก [Administration with BeatMaps + Core Game](./develop/Beat-Maps)
+- ข้อมูลการตั้งค่า และ คะแนน [Settings and High Score](./develop/Settings)
+- การแก้ปัญหาเบื้องต้น [Troubleshooting Problems](./develop/Troubleshooting)
+- ดีไซน์ของตัวเกม [Game Designs](./develop/Designs)
 
 ## อื่นๆ
-- [Team members](./others/team-member) รายชื่อคนในกลุ่ม
-- [Use of Open Source Software](./others/opensource-software) การใช้งานซอฟต์แวร์โอเพ่นซอร์สในตัวเกม
-- [Development tools](./others/tools) อุปกรณ์ในการพัฒนา
-- [Future Developments](./others/future-development) การพัฒนาต่อ
-- [Developer's Framework](./others/framework) วิธีการทำงานและพัฒนาของผู้พัฒนา
-- [Object Oriented Integrations](./others/oo-integrations) การใช้งานหลักการ OO ในการพัฒนา
-- [Repository Usage](./others/repository) การใช้งาน Repository ให้เป็นประโยชน์
-- [Statistics](./others/statistics) สถิติของโค้ดเกม
+-  รายชื่อคนในกลุ่ม [Team members](./others/team-member)
+- การใช้งานซอฟต์แวร์โอเพ่นซอร์สในตัวเกม [Use of Open Source Software](./others/opensource-software)
+- อุปกรณ์ในการพัฒนา [Development tools](./others/tools)
+- การพัฒนาต่อ [Future Developments](./others/future-development)
+- วิธีการทำงานและพัฒนาของผู้พัฒนา [Developer's Framework](./others/framework)
+- การใช้งานหลักการ OO ในการพัฒนา [Object Oriented Integrations](./others/oo-integrations)
+- การใช้งาน Repository ให้เป็นประโยชน์ [Repository Usage](./others/repository)
+- สถิติของโค้ดเกม [Statistics](./others/statistics)
 
 ##  รายงานของเกม
-- [Project Report](https://github.com/sagelga/trashmelody/blob/master/Object%20Oriented%20Programming%20Project%20Report.pdf) รายงานเกม
-- [Knowledge Management Integrations](https://github.com/sagelga/trashmelody/blob/master/Knowledge%20Management%20Project%20Report.pdf) การใช้งาน Knowledge Management ในการพัฒนา
+- รายงานเกม [Project Report](https://github.com/sagelga/trashmelody/blob/master/Object%20Oriented%20Programming%20Project%20Report.pdf)
+- การใช้งาน Knowledge Management ในขั้นตอนการพัฒนา [Knowledge Management Integrations](https://github.com/sagelga/trashmelody/blob/master/Knowledge%20Management%20Project%20Report.pdf)
