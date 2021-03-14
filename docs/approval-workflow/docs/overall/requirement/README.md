@@ -17,28 +17,6 @@ For more information about Google Apps Script, visit [https://script.google.com/
 ## Target Worksheet + Forms
 *Topic : Permission to use Google Apps Script*
 
-To create a target form (form that will **digest in** an approval request) and link it to Google Sheets, please carefully follow the instruction.
-
-1. Create a new Google Form by vising [https://forms.new](https://forms.new)<br>
-(Short URL for creating new Google Forms)
-![](./src/forms1.png)
-2. Add questions you liked to ask. Don't forget to have "Approver E-mail Address"
-![](./src/forms2.png)
-3. In settings, make sure "Collect Email Address" is ticked and "Edit after Submit" is not ticked. These settings option are already ticked and not ticked by default. If you managed to make change to these two options, please make sure you revert it back.
-![](./src/forms3.png)
-4. After you complete adding questions to the script, go to "Response"
-![](./src/forms4.png)
-5. Click the vertical button (<img src="./src/outline_more_vert_black_24dp.png" style="height:1em">)
-![](./src/forms5.png)
-6. Click "Select response destination"
-7. There are two options for you to choose from.
-    - Select "Create a new spreadsheet" if you start using this script for the first time.
-    - Select "Select existing spreadsheet" if you already have the Target worksheet.
-![](./src/forms6.png)
-8. You will be directed to/back to a spreadsheet. This will be your Target spreadsheet.
-![](./src/sheets1.png)
-
-## Worksheet's Sheets
 This is everything for the script (via Google Sheets). In order to let the script to ingest the current situation and decide on what it should do, these sheet is required in order to work.
 
 - **Approval Request**: The Workflow `Sheet` sheet.
@@ -46,6 +24,8 @@ Works as the Request data ingestion. This sheet may contain additional request a
 
 - **Approval Response**: The Workflow `InboundSheet` sheet.
 Works as the Approval Response data ingestion for the script. This sheet will contain ID (for connecting it with a Request that is being responded via the form) and an Approval Response (for allowing the script to update the request status and continue the workflow.
+
+Visit [Create Sheet and InboundSheet on Google Forms - Sheets]() to learn more on how you can create a system-required sheet.
 
 ## Worksheet Column
 or `Required Column` in the script. This allows the script to understand and pull up the correct data column. In each `sheet`, there will be required column that will be either from generate or manually create. Here are the list of all required column that will be used by the script.

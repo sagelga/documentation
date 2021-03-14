@@ -1,6 +1,4 @@
 # How it works
-*Tag : how-it-works*
-
 This page will show you how the approval workflow works in real time. We still recommends you to read the code in `approvalProcess()` function.
 
 ## How the script works
@@ -12,6 +10,7 @@ This page will show you how the approval workflow works in real time. We still r
    4. Otherwise (as in case of `Reject` or `Skipped`), script will repeats (2) with next row.
 3. When the status has reached to the last approver, (2) will starts again. But this time for `Approved`, it will sends an email to responder to do what the approver wants to do. Then the status will be updated as `Finished`.
 
+## System Process
 ### New Request
 Script will do as following to requests that has been tagged as `New Request`.
 1. Send email to requester to notifies that the request is being processed.
