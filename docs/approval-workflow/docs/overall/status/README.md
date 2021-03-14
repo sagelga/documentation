@@ -1,7 +1,4 @@
 # Approval Status
-*Tags : Status*
-
-## Script's Status
 For each of the approval request, it will only contains one of the four status listed below
 
 1. **Approved**</br>
@@ -18,14 +15,14 @@ For each of the approval request, it will only contains one of the four status l
     Request is skipped by either
     1. Sheet Manager forced to skip this approval request.
     2. Script forces the request to skip this request flow (i.e. Request has been Completed and Fulfilled).
-    2. Script ran to an issue, as it cannot understand the status of that request.
+    3. Script ran to an issue, as it cannot understand the status of that request.
 5. **Finished**</br>
    Request has been approved. E-mail has been sent to responders and everything works perfectly. Script will acts this response in the same way as 'Skipped'.
 
 Script will runs and actively refreshing the status only to status that are either 'Waiting' or 'Approved'. 'Rejected' and 'Skipped' request will be skipped immedietely.
 
 ## Edit the status
-Editing the status is possible, but please make sure that the status format matches [System's Status](#script-s-status) by different method defined below:
+Editing the status is possible, but please make sure that the status format matches Approval Status. Here's some examples you can modify the request's status.
 
 ### Option 1 Edit status manually
 Works with all status type
@@ -35,7 +32,7 @@ Works with all status type
 4. Starts or wait for script to run
 Make sure that you are typing in the correct format of approval status. If the status is incorrect, it will fallback and tries to roll back to the previous status.
 
-### Option 2 Faking up Response
+### Option 2 Faking up Responses
 Loophole behind this allows you to Approve or Reject any Response. Only works when the status is in `Waiting`.
 1. Copy the Request ID from the request that you want to edit
 2. Go to Target Response Form
