@@ -280,14 +280,20 @@ module.exports = {
         },
       },
     ],
+    ['vuepress-plugin-code-copy',
+      {
+        color: '#15ad97',
+        backgroundColor: '#15ad97',
+        staticIcon: true
+      }
+    ],
   ],
 
   markdown: {
     lineNumbers: true,
     extendMarkdown: md => {
-      md.use(require("markdown-it-katex"));
+      md.use(require('markdown-it-katex'));
       md.use(require('markdown-it-task-lists'));
     }
   },
-
 }
