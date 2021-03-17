@@ -285,9 +285,8 @@ module.exports = {
   markdown: {
     lineNumbers: true,
     extendMarkdown: md => {
-      md.use(require("markdown-it-katex"));
+      md.use(require('markdown-it-katex'));
       md.use(require('markdown-it-task-lists'));
     }
   },
-
 }
