@@ -280,6 +280,13 @@ module.exports = {
         },
       },
     ],
+    ['vuepress-plugin-code-copy',
+      {
+        color: '#15ad97',
+        backgroundColor: '#15ad97',
+        staticIcon: true
+      }
+    ],
   ],
 
   markdown: {
