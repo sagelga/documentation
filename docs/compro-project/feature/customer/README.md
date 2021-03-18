@@ -1,12 +1,12 @@
 # Customer Membership
 ![](./img/dashboard.png)
 
-| คีย์ลัด  | ฟีเจอร์                                                             | การทำงาน |
-| :---: | ----------------------------------------------------------------- | ------- |
-|   1   | Preview customer database                  <br/>*ดูข้อมูลของลูกค้า*    |         |
-|   2   | Create new customer ID                     <br/>*สร้างข้อมูลลูกค้าใหม่* |         |
-|   3   | Delete customer metadata from the database <br/>*ลบข้อมูลลูกค้า*      |         |
-|   4   | Update existed customer                    <br/>*แก้ไขข้อมูลลูกค้า*    |         |
+| คีย์ลัด  | ฟีเจอร์                                                             |
+| :---: | ----------------------------------------------------------------- |
+|   1   | Preview customer database                  <br/>*ดูข้อมูลของลูกค้า*    |
+|   2   | Create new customer ID                     <br/>*สร้างข้อมูลลูกค้าใหม่* |
+|   3   | Delete customer metadata from the database <br/>*ลบข้อมูลลูกค้า*      |
+|   4   | Update existed customer                    <br/>*แก้ไขข้อมูลลูกค้า*    |
 
 ## ดูข้อมูลของลูกค้า
 ![](./img/customer-database/step1.png)

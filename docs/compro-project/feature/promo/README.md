@@ -1,12 +1,12 @@
 # Promotion
 ![](./img/homepage.png)
 
-| คีย์ลัด  | ฟีเจอร์                                                | คำอธิบาย |
-| :---: | ---------------------------------------------------- | ------ |
-|   1   | Preview promotion in database  <br/>*ดูข้อมูลโปรโมชัน*   |        |
-|   2   | Create a new promotion         <br/>*สร้างโปรโมชันใหม่* |        |
-|   3   | Delete promotion from database <br/>*ลบโปรโมชัน*      |        |
-|   4   | Update promotion metadata      <br/>*อับเดทโปรโมชัน*   |        |
+| คีย์ลัด  | ฟีเจอร์                                                |
+| :---: | ---------------------------------------------------- |
+|   1   | Preview promotion in database  <br/>*ดูข้อมูลโปรโมชัน*   |
+|   2   | Create a new promotion         <br/>*สร้างโปรโมชันใหม่* |
+|   3   | Delete promotion from database <br/>*ลบโปรโมชัน*      |
+|   4   | Update promotion metadata      <br/>*อับเดทโปรโมชัน*   |
 
 ## ดูข้อมูลโปรโมชัน
 เป็นการแสดงข้อมูลเกี่ยวกับโปรโมชันที่มีทั้งหมด (ทั้งใช้แล้วและยังไม่ได้ใช้)
