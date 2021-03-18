@@ -2,7 +2,7 @@ module.exports = {
   /**
   * Ref：https://v1.vuepress.vuejs.org/config/#title
   */
-  title: "sagelga's",
+  title: "sagelga's Documentation",
   /**
   * Ref：https://v1.vuepress.vuejs.org/config/#description
   */
@@ -32,7 +32,7 @@ module.exports = {
     editLinks: false,
     docsDir: 'docs',
     editLinkText: '',
-    lastUpdated: 'Last Updated (UTC)',
+    lastUpdated: 'Last Update (UTC)',
     searchPlaceholder: 'Search...',
     nav: [
       {
@@ -124,6 +124,7 @@ module.exports = {
             '',
             'proposal/',
             'credits/',
+            'theory/',
           ]
         },
         {
@@ -140,11 +141,13 @@ module.exports = {
           collapseable: false,
           children: [
             'feature/access-management/',
+            'feature/customer/',
             'feature/forecast/',
             'feature/inventory/',
             'feature/login/',
             'feature/loyalty/',
             'feature/main-menu/',
+            'feature/promo/',
             'feature/report/',
             'feature/sales/',
             'feature/settings/',
