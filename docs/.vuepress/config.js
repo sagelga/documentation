@@ -21,6 +21,9 @@ module.exports = {
     ['link', { rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/github-markdown-css/2.2.1/github-markdown.css' }]
   ],
 
+  // ref: https://vuepress.vuejs.org/theme/option-api.html#globallayout
+  globalLayout: 'docs/.vuepress/layouts/GlobalLayout.vue',
+
   /**
   * Theme configuration, here is the default theme configuration for VuePress.
   *
