@@ -8,3 +8,5 @@ Since multiple documentation are stored individually, there is no chance of main
 Now, I have stored every documentation here, with full maintaining automations and easy to navigate interface.
 
 To get started, select the documentation you like to visit at the navigation bar above.
+
+<ToggleDarkMode/>
