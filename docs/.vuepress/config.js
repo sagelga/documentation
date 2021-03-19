@@ -1,3 +1,5 @@
+const fs = require("fs");
+
 module.exports = {
   /**
   * Ref：https://v1.vuepress.vuejs.org/config/#title
@@ -34,24 +36,8 @@ module.exports = {
     editLinkText: '',
     lastUpdated: 'Last Update (UTC)',
     searchPlaceholder: 'Search...',
-    nav: [
-      {
-        text: 'Approval Workflow',
-        link: '/approval-workflow/'
-      },
-      {
-        text: 'POS System',
-        link: '/compro-project/'
-      },
-      {
-        text: 'Project Panda',
-        link: '/panda/'
-      },
-      {
-        text: 'Trash Melody',
-        link: '/trashmelody/'
-      },
-    ],
+
+    nav: require('./navbar/en.js'),
 
     sidebar: {
       '/approval-workflow/': [
@@ -61,59 +47,25 @@ module.exports = {
           children: [
             {
               title: 'Overall',
-              path: '/approval-workflow/docs/overall/requirement',
-              children: [
-                'docs/overall/requirement/',
-                'docs/overall/install/',
-                'docs/overall/start/',
-                'docs/overall/status/',
-                'docs/overall/how-it-works/',
-              ],
+              children: getSideBar('approval-workflow', 'docs/overall')
             },
             {
-              title: 'Develop',
-              path: '/approval-workflow/docs/develop/',
-              children: [
-                'docs/develop/',
-                {
-                  title: 'Configuration',
-                  path: '/approval-workflow/docs/develop/config/',
-                  children: [
-                    'docs/develop/config/config/',
-                    'docs/develop/config/response/',
-                  ],
-                },
-                {
-                  title: 'Module',
-                  path: '/approval-workflow/docs/develop/module/',
-                  children: [
-                    'docs/develop/module/main/',
-                    'docs/develop/module/functions/',
-                    'docs/develop/module/utility/',
-                    'docs/develop/module/sheets/',
-                    'docs/develop/module/sheetsInbound/',
-                    'docs/develop/module/email/',
-                    'docs/develop/module/email-function/',
-                  ],
-                },
-              ],
+              title: 'Configuration',
+              children: getSideBar('approval-workflow', 'docs/develop/config')
+            },
+            {
+              title: 'Module',
+              children: getSideBar('approval-workflow', 'docs/develop/module')
             },
             {
               title: 'Maintain',
-              path: '/approval-workflow/docs/maintain/',
-              children: [
-                'docs/maintain/issues/',
-                'docs/maintain/constraints/',
-              ],
+              children: getSideBar('approval-workflow', 'docs/maintain')
             },
-          ]
+          ],
         },
         {
-          title: 'User Manual',
-          collapseable: false,
-          children: [
-            'manual/',
-          ]
+          title: 'Manual',
+          children: getSideBar('approval-workflow', 'manual')
         },
       ],
       '/compro-project/': [
@@ -129,30 +81,12 @@ module.exports = {
         },
         {
           title: 'Getting Started',
-          collapseable: false,
-          children: [
-            'getting-start/requirement/',
-            'getting-start/installation/',
-            'getting-start/shortcut-keys/',
-          ]
+          children: getSideBar('compro-project', 'getting-start')
         },
         {
           title: 'Features',
-          collapseable: false,
-          children: [
-            'feature/access-management/',
-            'feature/customer/',
-            'feature/forecast/',
-            'feature/inventory/',
-            'feature/login/',
-            'feature/loyalty/',
-            'feature/main-menu/',
-            'feature/promo/',
-            'feature/report/',
-            'feature/sales/',
-            'feature/settings/',
-          ]
-        }
+          children: getSideBar('compro-project', 'feature')
+        },
       ],
       '/panda/': [
         {
@@ -171,18 +105,13 @@ module.exports = {
             {
               title: 'Back-end',
               collapseable: false,
-              children: [
-                'docs/back-end/apollo/',
-                'docs/back-end/session/',
-              ],
+              children: getSideBar('panda', 'docs/back-end')
+
             },
             {
               title: 'Front-end',
               collapseable: false,
-              children: [
-                'docs/front-end/components/',
-                'docs/front-end/style-guide/',
-              ],
+              children: getSideBar('panda', 'docs/front-end')
             },
             'docs/api/',
           ]
@@ -195,39 +124,42 @@ module.exports = {
             {
               title: 'Client',
               collapseable: false,
-              children: [
-                'manual/client/cancel-request',
-                'manual/client/check-request',
-                'manual/client/find-space',
-                'manual/client/login',
-                'manual/client/logout',
-                'manual/client/report-problem',
-                'manual/client/reserve-space',
-                'manual/client/search-space',
-              ],
+              children: getSideBar('panda', 'manual/client')
+              // [
+              //   'manual/client/cancel-request',
+              //   'manual/client/check-request',
+              //   'manual/client/find-space',
+              //   'manual/client/login',
+              //   'manual/client/logout',
+              //   'manual/client/report-problem',
+              //   'manual/client/reserve-space',
+              //   'manual/client/search-space',
+              // ],
             },
             {
               title: 'Approver',
               collapseable: false,
-              children: [
-                'manual/approver/approve-request',
-                'manual/approver/decline-request',
-              ],
+              children: getSideBar('panda', 'manual/approver')
+              // [
+              //   'manual/approver/approve-request',
+              //   'manual/approver/decline-request',
+              // ],
             },
             {
               title: 'Admin',
               collapseable: false,
-              children: [
-                'manual/admin/add-material',
-                'manual/admin/delete-material',
-                'manual/admin/add-role',
-                'manual/admin/delete-role',
-                'manual/admin/add-space',
-                'manual/admin/edit-space',
-                'manual/admin/delete-space',
-                'manual/admin/create-group',
-                'manual/admin/edit-group',
-              ],
+              children: getSideBar('panda', 'manual/admin')
+              // [
+              //   'manual/admin/add-material',
+              //   'manual/admin/delete-material',
+              //   'manual/admin/add-role',
+              //   'manual/admin/delete-role',
+              //   'manual/admin/add-space',
+              //   'manual/admin/edit-space',
+              //   'manual/admin/delete-space',
+              //   'manual/admin/create-group',
+              //   'manual/admin/edit-group',
+              // ],
             },
           ],
         },
@@ -237,12 +169,7 @@ module.exports = {
           title: 'Overall',
           collapseable: false,
           path: '/trashmelody/',
-          children: [
-            'overall/requirement/',
-            'overall/install/',
-            'overall/rule/',
-            'overall/playlist/',
-          ]
+          children: getSideBar('trashmelody', 'overall')
         },
         {
           title: 'Documentation',
@@ -260,7 +187,7 @@ module.exports = {
         },
         'credit/',
       ],
-    },
+    }
   },
 
   /**
@@ -299,4 +226,14 @@ module.exports = {
       md.use(require('markdown-it-task-lists'));
     }
   },
+}
+
+function getSideBar(root, folder) {
+  return fs
+    .readdirSync(process.cwd() + '/docs/' + root + '/' + folder)
+    .map(sidebar => folder + '/' + sidebar + '/')
+    .map(sidebar => sidebar.replace('/README.md', '')
+      .replace(root, '')
+      .replace('.md/', '.md')
+    )
 }
