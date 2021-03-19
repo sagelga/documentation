@@ -19,18 +19,23 @@
 ภาคเรียนที่ 1 ปีการศึกษา 2560
 
 ## เทคโนโลยีที่ใช้
-- libGDX
-  - Game engine
-  - https://libgdx.badlogicgames.com
-- Gradle
-  - Package manager
-  - https://gradle.org
-- Vavr
-  - Functional programming library
-  - http://www.vavr.io/vavr-docs/
-- Super Jumper
-  - https://github.com/libgdx/libgdx-demo-superjumper
-- Kotlin
-  - https://kotlinlang.org/docs/reference/basic-syntax.html
-- Osu Game map
-  - สำหรับการนำแมพ (เวลาในการกดแต่ละปุ่ม) มาใช้ในเกม
+libGDX
+- Game engine
+- [https://libgdx.badlogicgames.com](https://libgdx.badlogicgames.com)
+
+Gradle
+- Package manager
+- [https://gradle.org](https://gradle.org)
+
+Vavr
+- Functional programming library
+- [http://www.vavr.io/vavr-docs/](http://www.vavr.io/vavr-docs/)
+
+ Super Jumper
+- [https://github.com/libgdx/libgdx-demo-superjumper](https://github.com/libgdx/libgdx-demo-superjumper)
+
+ Kotlin
+- [https://kotlinlang.org/docs/reference/basic-syntax.html](https://kotlinlang.org/docs/reference/basic-syntax.html)
+
+ Osu Game map
+- สำหรับการนำแมพ (เวลาในการกดแต่ละปุ่ม) มาใช้ในเกม
