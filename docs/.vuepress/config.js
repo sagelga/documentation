@@ -125,41 +125,16 @@ module.exports = {
               title: 'Client',
               collapseable: false,
               children: getSideBar('panda', 'manual/client')
-              // [
-              //   'manual/client/cancel-request',
-              //   'manual/client/check-request',
-              //   'manual/client/find-space',
-              //   'manual/client/login',
-              //   'manual/client/logout',
-              //   'manual/client/report-problem',
-              //   'manual/client/reserve-space',
-              //   'manual/client/search-space',
-              // ],
             },
             {
               title: 'Approver',
               collapseable: false,
               children: getSideBar('panda', 'manual/approver')
-              // [
-              //   'manual/approver/approve-request',
-              //   'manual/approver/decline-request',
-              // ],
             },
             {
               title: 'Admin',
               collapseable: false,
               children: getSideBar('panda', 'manual/admin')
-              // [
-              //   'manual/admin/add-material',
-              //   'manual/admin/delete-material',
-              //   'manual/admin/add-role',
-              //   'manual/admin/delete-role',
-              //   'manual/admin/add-space',
-              //   'manual/admin/edit-space',
-              //   'manual/admin/delete-space',
-              //   'manual/admin/create-group',
-              //   'manual/admin/edit-group',
-              // ],
             },
           ],
         },
@@ -187,6 +162,15 @@ module.exports = {
         },
         'credit/',
       ],
+      '/documentation/': [
+        '',
+        'release-note/',
+        {
+          title: 'Custom',
+          collapseable: false,
+          children: getSideBar('documentation', 'custom')
+        },
+      ],
     }
   },
 
@@ -198,11 +182,6 @@ module.exports = {
     '@vuepress/plugin-medium-zoom',
     '@vuepress/nprogress',
     'vuepress-plugin-smooth-scroll',
-    ['vuepress-plugin-copyright',
-      {
-        noCopy: true, // the selected text will be uncopiable
-        minLength: 10, // if its length is greater than 100
-      },],
     ['@vuepress/last-updated',
       {
         dateOptions: {
@@ -210,6 +189,11 @@ module.exports = {
         },
       },
     ],
+    ['vuepress-plugin-copyright',
+      {
+        noCopy: true, // the selected text will be uncopiable
+        minLength: 10, // if its length is greater than 100
+      },],
     ['vuepress-plugin-code-copy',
       {
         color: '#15ad97',
@@ -227,6 +211,7 @@ module.exports = {
     }
   },
 }
+
 
 function getSideBar(root, folder) {
   return fs
