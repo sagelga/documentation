@@ -47,24 +47,29 @@ module.exports = {
           children: [
             {
               title: 'Overall',
+              collapseable: false,
               children: getSideBar('approval-workflow', 'docs/overall')
             },
             {
               title: 'Configuration',
+              collapseable: false,
               children: getSideBar('approval-workflow', 'docs/develop/config')
             },
             {
               title: 'Module',
+              collapseable: false,
               children: getSideBar('approval-workflow', 'docs/develop/module')
             },
             {
               title: 'Maintain',
+              collapseable: false,
               children: getSideBar('approval-workflow', 'docs/maintain')
             },
           ],
         },
         {
           title: 'Manual',
+          collapseable: false,
           children: getSideBar('approval-workflow', 'manual')
         },
       ],
@@ -81,10 +86,12 @@ module.exports = {
         },
         {
           title: 'Getting Started',
+          collapseable: false,
           children: getSideBar('compro-project', 'getting-start')
         },
         {
           title: 'Features',
+          collapseable: false,
           children: getSideBar('compro-project', 'feature')
         },
       ],
@@ -96,24 +103,29 @@ module.exports = {
             '',
             'proposal/',
             'credits/',
+            {
+              title: 'Requirement',
+              collapseable: false,
+              path: '/panda/requirement/workflow/',
+              children: getSideBar('panda', 'requirement'),
+            },
           ]
         },
         {
           title: 'Documentation',
           collapseable: false,
           children: [
+            'docs/api/',
             {
               title: 'Back-end',
               collapseable: false,
               children: getSideBar('panda', 'docs/back-end')
-
             },
             {
               title: 'Front-end',
               collapseable: false,
               children: getSideBar('panda', 'docs/front-end')
             },
-            'docs/api/',
           ]
         },
         {
@@ -166,7 +178,7 @@ module.exports = {
         '',
         'release-note/',
         {
-          title: 'Custom',
+          title: 'Customization',
           collapseable: false,
           children: getSideBar('documentation', 'custom')
         },

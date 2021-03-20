@@ -4,7 +4,7 @@
   - Kinda trippy isn't it?
   - Documentation is filled with configurations and customizations. So it is a good idea to document it.
   - Developers that are using my documentation will benefits from this.
-
+- <Badge text="New" type="tip"/> Add requirement information of Project Panda
 ## 2021-03-19
 - <Badge text="New" type="tip"/> Auto-sidebar functions
   - This comes with some change to `config.js` that we change from creating our own sidebar children to automatically crawls.

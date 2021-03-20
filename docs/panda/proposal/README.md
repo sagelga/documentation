@@ -1,35 +1,32 @@
 # Project Proposal
-- Reduce the request time to hour(s) not day(s)
-- Simplifies workflow with self-service methods
-- Remove repetitive workflow with self-service methods
-- Reduce staff workloads by using self-service methods
-- Proofing that electronic transition of forms is possible
-- Reduce paperwork + paper usage to minimal
-- Make the emergency room request to become more efficient
+## Business Requirements
+The traditional methods for space reservation in King Mongkut's Institute of
+Technology Ladkrabang require unnecessarily complicated, slow and repetitive
+processes.
 
-## Basic Needs
-What the users want:
-- Fast booking
-- Fast status viewing
-- Multi-device access
-- Trustworthy authentication
-- Easy-to-use UI
-- Exportable room schedule
-- Prevent the teachers from abandoning the system
+Once a requester needs a space, or usually, a room, he or she must contact a room manager directly to check for availabilities. The room manager then needs to look up through calendars, spreadsheets, or even papers (depending on each manager) to make sure the room hasn’t already been reserved at a certain time. If the room is available, then the requester receives a reservation form and fills it up. The form needs physical signatures from various persons, e.g. teachers, staff, and authorities, before being returned to the room manager which will register the reservation on their records to finish the process.
 
-## Core Features
-What the system should do/have:
-- กดไม่กี่ปุ่มก็สามารถได้ผลลัพธ์ที่ต้องการเลย
-- โหลดหน้าเว็บให้เร็ว
-- เจ้าหน้าที่สามารถเพื่มข้อมูล หรือ แก้ไขข้อมูลได้อย่างรวดเร็ว
-- เว็บดูเรียบร้อย แต่ modern
-- ระบบสามารถ scale ตามขนาดผู้ใช้งาน และ จำนวนห้องได้ง่าย
-- ระบบรองรับ unbalanced traffic load ได้ดี
-- สามารถ export QR Code ไปแปะหน้าห้อง เพื่อให้ยืนยันการใช้งาน/ดูการจองได้
+The Online Room Reservation System is the system to improve this workflow by allowing the whole process to be done online. This means any student, teacher, and staff in the institute can reserve a room at any time and from any place they’re comfortable with. Just log in with an existing organization account, search for a room, select an available time, then submit a request and wait for an approval.
 
-## Additional Features
-What we want to do, but not prioritized:
-- ระบบสามารถ list ห้อง โดยเรียงระดับตาม requirement เพี่มเติมได้
-- ตั้งระบบยกเลิกการจองทันที หากไม่มีการยืนยันตัวตนที่ห้อง (เช่นมาช้าเกิน 5 นาทีก็จะยกเลิกการจองทันที)
-- ให้นักศึกษาสามารถพิมพ์ข้อมูลรหัสวิชาเรียน และ export ออกมาเป็นตารางสอนอย่างเข้าใจง่ายได้
-- ให้อาจารย์สามารถเข้าไปเพื่มข้อมูลเกี่ยวกับรายวิชาได้ เพื่อทำให้ระบบการแนะนำมีประสิทธิภาพมากขื้น
+## Functionalities
+1. Students, teachers, and staff in the institute can request spaces online.
+2. Users can check space availabilities and present a reservation proof to relevant authorities.
+3. Users can scan a QR code in front of a room to view its information and interact with the system.
+4. Users can make a recurring reservation.
+5. Users can edit or cancel their requests right away, and authorities will be notified.
+6. The system can notify authorities and staff to approve or deny room requests.
+7. The system is easy to use and supports mobile devices.
+8. The system supports role and permission management to suit the variable requirements of each faculty.
+
+## Business Values
+### Tangible
+- Reduces the use of paper and printer ink
+- Speeds up request time and simplifies the request process
+
+### Intangible
+- Creates user satisfaction.
+- Reduces human errors from the staff and the users.
+- Minimizes overlapping requests created by redundant information
+
+## Special constraints
+The user needs to be connected to the Internet
