@@ -47,24 +47,29 @@ module.exports = {
           children: [
             {
               title: 'Overall',
+              collapseable: false,
               children: getSideBar('approval-workflow', 'docs/overall')
             },
             {
               title: 'Configuration',
+              collapseable: false,
               children: getSideBar('approval-workflow', 'docs/develop/config')
             },
             {
               title: 'Module',
+              collapseable: false,
               children: getSideBar('approval-workflow', 'docs/develop/module')
             },
             {
               title: 'Maintain',
+              collapseable: false,
               children: getSideBar('approval-workflow', 'docs/maintain')
             },
           ],
         },
         {
           title: 'Manual',
+          collapseable: false,
           children: getSideBar('approval-workflow', 'manual')
         },
       ],
@@ -81,10 +86,12 @@ module.exports = {
         },
         {
           title: 'Getting Started',
+          collapseable: false,
           children: getSideBar('compro-project', 'getting-start')
         },
         {
           title: 'Features',
+          collapseable: false,
           children: getSideBar('compro-project', 'feature')
         },
       ],
@@ -96,24 +103,29 @@ module.exports = {
             '',
             'proposal/',
             'credits/',
+            {
+              title: 'Requirement',
+              collapseable: false,
+              path: '/panda/requirement/workflow/',
+              children: getSideBar('panda', 'requirement'),
+            },
           ]
         },
         {
           title: 'Documentation',
           collapseable: false,
           children: [
+            'docs/api/',
             {
               title: 'Back-end',
               collapseable: false,
               children: getSideBar('panda', 'docs/back-end')
-
             },
             {
               title: 'Front-end',
               collapseable: false,
               children: getSideBar('panda', 'docs/front-end')
             },
-            'docs/api/',
           ]
         },
         {
@@ -125,41 +137,16 @@ module.exports = {
               title: 'Client',
               collapseable: false,
               children: getSideBar('panda', 'manual/client')
-              // [
-              //   'manual/client/cancel-request',
-              //   'manual/client/check-request',
-              //   'manual/client/find-space',
-              //   'manual/client/login',
-              //   'manual/client/logout',
-              //   'manual/client/report-problem',
-              //   'manual/client/reserve-space',
-              //   'manual/client/search-space',
-              // ],
             },
             {
               title: 'Approver',
               collapseable: false,
               children: getSideBar('panda', 'manual/approver')
-              // [
-              //   'manual/approver/approve-request',
-              //   'manual/approver/decline-request',
-              // ],
             },
             {
               title: 'Admin',
               collapseable: false,
               children: getSideBar('panda', 'manual/admin')
-              // [
-              //   'manual/admin/add-material',
-              //   'manual/admin/delete-material',
-              //   'manual/admin/add-role',
-              //   'manual/admin/delete-role',
-              //   'manual/admin/add-space',
-              //   'manual/admin/edit-space',
-              //   'manual/admin/delete-space',
-              //   'manual/admin/create-group',
-              //   'manual/admin/edit-group',
-              // ],
             },
           ],
         },
@@ -187,6 +174,15 @@ module.exports = {
         },
         'credit/',
       ],
+      '/documentation/': [
+        '',
+        'release-note/',
+        {
+          title: 'Customization',
+          collapseable: false,
+          children: getSideBar('documentation', 'custom')
+        },
+      ],
     }
   },
 
@@ -198,11 +194,6 @@ module.exports = {
     '@vuepress/plugin-medium-zoom',
     '@vuepress/nprogress',
     'vuepress-plugin-smooth-scroll',
-    ['vuepress-plugin-copyright',
-      {
-        noCopy: true, // the selected text will be uncopiable
-        minLength: 10, // if its length is greater than 100
-      },],
     ['@vuepress/last-updated',
       {
         dateOptions: {
@@ -210,6 +201,11 @@ module.exports = {
         },
       },
     ],
+    ['vuepress-plugin-copyright',
+      {
+        noCopy: true, // the selected text will be uncopiable
+        minLength: 10, // if its length is greater than 100
+      },],
     ['vuepress-plugin-code-copy',
       {
         color: '#15ad97',
@@ -227,6 +223,7 @@ module.exports = {
     }
   },
 }
+
 
 function getSideBar(root, folder) {
   return fs
