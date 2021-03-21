@@ -15,4 +15,8 @@ module.exports = [
         text: 'Trash Melody',
         link: '/trashmelody/'
     },
+    {
+        text: 'Documentation',
+        link: '/documentation/'
+    },
 ]
