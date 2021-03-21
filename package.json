@@ -19,7 +19,8 @@
     "@vuepress/plugin-nprogress": "^1.8.2",
     "vuepress": "^1.5.3",
     "vuepress-plugin-copyright": "^1.0.2",
-    "vuepress-plugin-medium-zoom": "^1.1.9"
+    "vuepress-plugin-medium-zoom": "^1.1.9",
+    "vuepress-plugin-reading-time": "^0.1.1"
   },
   "dependencies": {
     "markdown-it-katex": "^2.0.3",

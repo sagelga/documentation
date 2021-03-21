@@ -194,6 +194,7 @@ module.exports = {
     '@vuepress/plugin-medium-zoom',
     '@vuepress/nprogress',
     'vuepress-plugin-smooth-scroll',
+    'vuepress-plugin-reading-time',
     ['@vuepress/last-updated',
       {
         dateOptions: {
