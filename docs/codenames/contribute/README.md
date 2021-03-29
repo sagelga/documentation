@@ -46,7 +46,7 @@ And each word must follow this guideline:
 and this covention:
 - Each word **is a word. Not a sentence.**
 - Must contains **only one ISO language code**.
-- Wordlist **does not contain duplicate** based on each language's [duplication guidelines](#duplication-guidelines).
+- Wordlist **does not contain duplicate** based on each language's [duplication guidelines](./duplicate/).
 - Check that your wordlist is **not a duplicate to *pending wordlist Pull Request* or *existing wordlist*.**
 - Same word that can be exchangable is considered duplicates.
 
@@ -62,18 +62,3 @@ Add any description you feel like to.
 Create us a Pull Request! Just complete the Pull Request form and start creating a PR.
 
 You might be required to edit your request or stand-your-ground at anytime.
-
----
-
-## Duplication Guidelines
-### Germanic Languages
-*Applies to : English, French, German, Dutch, Swedish, Danish, Norwegian, Scots, Icelandic*
-- Is in either Capital Case or Lower Case.
-- Avoid using language grammatical information (eg. gender, person, number, tense, aspect, mood, voice, etc.) in each word.
-    - If the word must contain a gender-specific word, use a widely used/accepts gender or use neutral/neuter gender instead.
-    - Use Present Simple Tense for time-specific word.
-- Strongly avoid using Non-finite verb (e.g. infinitives, participles, gerunds).
-- Part of speech (e.g. Noun, Verb, Adjective) form counts as the same word.
-
-### The rest of the world
-We still have no language guidelines, until you turned in! If you feel like to, you can create a Pull Request and suggests.
