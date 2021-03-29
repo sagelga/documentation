@@ -16,6 +16,10 @@ module.exports = [
         link: '/trashmelody/'
     },
     {
+        text: 'Codenames',
+        link: '/codenames/'
+    },
+    {
         text: 'Documentation',
         link: '/documentation/'
     },

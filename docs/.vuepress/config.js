@@ -183,6 +183,10 @@ module.exports = {
           children: getSideBar('documentation', 'custom')
         },
       ],
+      '/codenames/': [
+        'contribute/',
+        'wordlist/'
+      ],
     }
   },
 
