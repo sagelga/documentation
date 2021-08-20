@@ -2,32 +2,47 @@ const fs = require("fs");
 
 module.exports = {
   /**
-  * Ref：https://v1.vuepress.vuejs.org/config/#title
-  */
+   * Ref：https://v1.vuepress.vuejs.org/config/#title
+   */
   title: "sagelga's Documentation",
   /**
-  * Ref：https://v1.vuepress.vuejs.org/config/#description
-  */
+   * Ref：https://v1.vuepress.vuejs.org/config/#description
+   */
   description: 'Documentation for everything repository',
 
   /**
-  * Extra tags to be injected to the page HTML `<head>`
-  *
-  * ref：https://v1.vuepress.vuejs.org/config/#head
-  */
+   * Extra tags to be injected to the page HTML `<head>`
+   *
+   * ref：https://v1.vuepress.vuejs.org/config/#head
+   */
   head: [
-    ['meta', { name: 'theme-color', content: '#3eaf7c' }],
-    ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
-    ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }],
-    ['link', { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.5.1/katex.min.css' }],
-    ['link', { rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/github-markdown-css/2.2.1/github-markdown.css' }]
+    ['meta', {
+      name: 'theme-color',
+      content: '#3eaf7c'
+    }],
+    ['meta', {
+      name: 'apple-mobile-web-app-capable',
+      content: 'yes'
+    }],
+    ['meta', {
+      name: 'apple-mobile-web-app-status-bar-style',
+      content: 'black'
+    }],
+    ['link', {
+      rel: 'stylesheet',
+      href: 'https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.5.1/katex.min.css'
+    }],
+    ['link', {
+      rel: 'stylesheet',
+      href: 'https://cdn.jsdelivr.net/github-markdown-css/2.2.1/github-markdown.css'
+    }]
   ],
 
   /**
-  * Theme configuration, here is the default theme configuration for VuePress.
-  *
-  * ref：https://v1.vuepress.vuejs.org/theme/default-theme-config.html
-  */
+   * Theme configuration, here is the default theme configuration for VuePress.
+   *
+   * ref：https://v1.vuepress.vuejs.org/theme/default-theme-config.html
+   */
   themeConfig: {
     repo: 'sagelga/documentation',
     repoLabel: 'Github',
@@ -40,12 +55,10 @@ module.exports = {
     nav: require('./navbar/en.js'),
 
     sidebar: {
-      '/approval-workflow/': [
-        {
+      '/approval-workflow/': [{
           title: 'Documentation',
           collapseable: false,
-          children: [
-            {
+          children: [{
               title: 'Overall',
               collapseable: false,
               children: getSideBar('approval-workflow', 'docs/overall')
@@ -73,8 +86,7 @@ module.exports = {
           children: getSideBar('approval-workflow', 'manual')
         },
       ],
-      '/compro-project/': [
-        {
+      '/compro-project/': [{
           title: 'Overall',
           collapseable: false,
           children: [
@@ -95,8 +107,7 @@ module.exports = {
           children: getSideBar('compro-project', 'feature')
         },
       ],
-      '/panda/': [
-        {
+      '/panda/': [{
           title: 'Overall',
           collapseable: false,
           children: [
@@ -132,8 +143,7 @@ module.exports = {
           title: 'User Manual',
           collapseable: false,
           path: '/panda/manual/',
-          children: [
-            {
+          children: [{
               title: 'Client',
               collapseable: false,
               children: getSideBar('panda', 'manual/client')
@@ -151,8 +161,7 @@ module.exports = {
           ],
         },
       ],
-      '/trashmelody/': [
-        {
+      '/trashmelody/': [{
           title: 'Overall',
           collapseable: false,
           path: '/trashmelody/',
@@ -161,8 +170,7 @@ module.exports = {
         {
           title: 'Documentation',
           collapseable: false,
-          children: [
-            {
+          children: [{
               title: 'API',
               collapseable: false,
               children: [
@@ -191,8 +199,8 @@ module.exports = {
   },
 
   /**
-  * Apply plugins，ref：https://v1.vuepress.vuejs.org/zh/plugin/
-  */
+   * Apply plugins，ref：https://v1.vuepress.vuejs.org/zh/plugin/
+   */
   plugins: [
     '@vuepress/plugin-back-to-top',
     '@vuepress/plugin-medium-zoom',
@@ -210,7 +218,8 @@ module.exports = {
       {
         noCopy: true, // the selected text will be uncopiable
         minLength: 10, // if its length is greater than 100
-      },],
+      },
+    ],
     ['vuepress-plugin-code-copy',
       {
         color: '#15ad97',
@@ -218,6 +227,12 @@ module.exports = {
         staticIcon: true
       }
     ],
+    [
+      '@vuepress/google-analytics',
+      {
+        'ga': 'G-BTF0LX3HTD' // UA-00000000-0
+      }
+    ]
   ],
 
   markdown: {
