@@ -1,4 +1,6 @@
 ---
+home: true
+tagline: Documentations for all project
 footer: © 2021 Kunanon Srisuntiroj
 ---
 # Welcome!
