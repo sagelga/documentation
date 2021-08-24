@@ -45,7 +45,6 @@ module.exports = {
    */
   themeConfig: {
     repo: 'sagelga/documentation',
-    repoLabel: 'Github',
     editLinks: false,
     docsDir: 'docs',
     editLinkText: '',
@@ -202,31 +201,6 @@ module.exports = {
    * Apply plugins，ref：https://v1.vuepress.vuejs.org/zh/plugin/
    */
   plugins: [
-    '@vuepress/plugin-back-to-top',
-    '@vuepress/plugin-medium-zoom',
-    '@vuepress/nprogress',
-    'vuepress-plugin-smooth-scroll',
-    'vuepress-plugin-reading-time',
-    ['@vuepress/last-updated',
-      {
-        dateOptions: {
-          hour12: false
-        },
-      },
-    ],
-    ['vuepress-plugin-copyright',
-      {
-        noCopy: true, // the selected text will be uncopiable
-        minLength: 10, // if its length is greater than 100
-      },
-    ],
-    ['vuepress-plugin-code-copy',
-      {
-        color: '#15ad97',
-        backgroundColor: '#15ad97',
-        staticIcon: true
-      }
-    ],
     [
       '@vuepress/google-analytics',
       {
