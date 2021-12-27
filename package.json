@@ -5,7 +5,7 @@
   },
   "devDependencies": {
     "@vuepress/plugin-back-to-top": "^1.8.2",
-    "@vuepress/plugin-google-analytics": "^1.8.2",
+    "@vuepress/plugin-google-analytics": "^1.9.5",
     "@vuepress/plugin-medium-zoom": "^1.8.2",
     "markdown-it-katex": "^2.0.3",
     "markdown-it-task-lists": "^2.1.1",
