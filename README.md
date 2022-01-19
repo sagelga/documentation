@@ -1,22 +1,23 @@
-# documentation
+# sagelga's Documentation
 Documentation for everything repository
 
-## Origins
-This repository is built for documentation storage; on GitHub; powered by Vuepress.<br/>
-Merging all of the documentations that are scattered around my repository is not good thing to do.<br>'
-So I decided to make this repository contains every documentation that I have + everything is being automatically managed and remains future-proof.
+## About this Repository
+This repository originated from multiple Project's documentation; and now are merged and maintained as one.
 
-## Service use
+With the new projects popping on my repository, I will keep new repository Documentation here.
+
+Website uses VuePress to build a static webpage and can be crawled and indexed by Google services.
+
+## Contribute
+If you find any typos or website optimization strategies, feel free to create a new Discussions or create a new Pull Request. Thanks in advance!
+
+## Services
 I am currently using
 - Dependabot
-    - To manage a Vuepress-based dependencies and allows Dependabot to update when needed.
+    - Create a dependency alerts and Pull Requests.
 - GitHub Actions
-    - Allows the website to be automatically built. No more manual build-and-commit anymore.
-
-and probably more. Very soon.
+    - Automatically build the website from Markdown to webpage.
 
 ## Build Status
-### Vuepress
-|Lint|Build|Deploy|
-|-|-|-|
-|[![Vuepress Lint](https://github.com/sagelga/documentation/actions/workflows/vuepress-lint.yml/badge.svg)](https://github.com/sagelga/documentation/actions/workflows/vuepress-lint.yml)|[![Vuepress Build](https://github.com/sagelga/documentation/actions/workflows/vuepress-build.yml/badge.svg)](https://github.com/sagelga/documentation/actions/workflows/vuepress-build.yml)|[![Vuepress Deploy](https://github.com/sagelga/documentation/actions/workflows/vuepress-deploy.yml/badge.svg)](https://github.com/sagelga/documentation/actions/workflows/vuepress-deploy.yml)|
+| [![Vuepress Lint](https://github.com/sagelga/documentation/actions/workflows/vuepress-lint.yml/badge.svg)](https://github.com/sagelga/documentation/actions/workflows/vuepress-lint.yml) | [![Vuepress Build](https://github.com/sagelga/documentation/actions/workflows/vuepress-build.yml/badge.svg)](https://github.com/sagelga/documentation/actions/workflows/vuepress-build.yml) | [![Vuepress Deploy](https://github.com/sagelga/documentation/actions/workflows/vuepress-deploy.yml/badge.svg)](https://github.com/sagelga/documentation/actions/workflows/vuepress-deploy.yml) |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
