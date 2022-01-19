@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=IBM+Plex+Sans+Thai:wght@500;700&family=Sarabun:wght@500;700&display=swap');
+
+@font-face {
+  font-family: 'Anuphan';
+  src: url(../font/Anuphan-Medium.woff2);
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Anuphan';
+  src: url(../font/Anuphan-Bold.woff2);
+  font-style: bold;
+  font-weight: 700;
+}
+
+// :root {
+//   // brand colors
+//   --c-brand: #3e8baf;
+//   --c-brand-light: #3e8baf;
+// }
+
+// html.dark {
+//   // brand colors
+//   --c-brand: #3e8baf;
+//   --c-brand-light: #3e8baf;
+// }
+
+body {
+  font-family: 'Anuphan', 'IBM Plex Sans', sans-serif;
+}
+
+// .sidebar,
+// .navbar-links-wrapper {
+//   font-family: 'Sarabun', sans-serif;
+//   font-weight: 700;
+// }
+
+// .theme-default-content,
+// p,
+// footer {
+//   font-family: 'Sarabun', sans-serif;
+//   font-weight: 500;
+// }
+
+code {
+  font-family: 'IBM Plex Mono', monospace;
+}

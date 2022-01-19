@@ -1,15 +1,17 @@
 {
-  "scripts": {
-    "dev": "vuepress dev docs",
-    "build": "vuepress build docs"
-  },
+  "name": "documentation",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/sagelga/documentation",
+  "author": "Kunanon Srisuntiroj <son9912@gmail.com>",
+  "license": "UNLICENSED",
   "devDependencies": {
     "@vuepress/plugin-google-analytics": "^2.0.0-beta.33",
     "@vuepress/plugin-search": "^2.0.0-beta.33",
-    "markdown-it": "^12.3.2",
-    "markdown-it-katexx": "^3.2.0",
-    "markdown-it-task-lists": "^2.1.1",
-    "vuepress": "^2.0.0-beta.33",
-    "vuepress-plugin-code-copy": "^1.0.6"
+    "vuepress": "^2.0.0-beta.33"
+  },
+  "scripts": {
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs"
   }
 }
