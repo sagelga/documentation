@@ -14,21 +14,18 @@
   font-weight: 700;
 }
 
-// :root {
-//   // brand colors
-//   --c-brand: #3e8baf;
-//   --c-brand-light: #3e8baf;
-// }
+:root {
+  // brand colors
+  --c-brand: #3e8baf;
+  --c-brand-light: #3e8baf;
+  --font-family: 'Anuphan', 'IBM Plex Sans', sans-serif;
+}
 
 // html.dark {
 //   // brand colors
 //   --c-brand: #3e8baf;
 //   --c-brand-light: #3e8baf;
 // }
-
-body {
-  font-family: 'Anuphan', 'IBM Plex Sans', sans-serif;
-}
 
 // .sidebar,
 // .navbar-links-wrapper {

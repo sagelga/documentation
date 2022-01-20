@@ -65,5 +65,4 @@ export default defineUserConfig<DefaultThemeOptions>({
   //     md.use(require('markdown-it-task-lists'));
   //   }
   // },
-}
-)
+})

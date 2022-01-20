@@ -3,10 +3,10 @@ Here's some options you can run the script
 
 ### Option 1 Manually via UI
 1. Open the `sheet`
-</br>![](./src/firefox_rqrWTbHsaN.png)
+<br>![](./src/firefox_rqrWTbHsaN.png)
 2. In tool bar, select `Approval Addons`
 3. Click on `Run` to start the script.
-</br>![](./src/firefox_sNaRKZXHbL.png)
+<br>![](./src/firefox_sNaRKZXHbL.png)
 
 ::: tip MISSING SOMETHING?
 If you did not see `Approval Addons`, it might means you improperly install the script.
@@ -15,9 +15,9 @@ If you did not see `Approval Addons`, it might means you improperly install the 
 ### Option 2 Automatically via Triggers
 Running the script manually is too hard work for you. We recommended you to set the triggers and let Google do it's job.
 1. Go to the Script editing page, click Edit > Current project's triggers
-    </br>![](./src/script-edit.png)
+    <br>![](./src/script-edit.png)
 2. Click Add Trigger
-    </br>![](./src/developer-hub-triggers.png)
+    <br>![](./src/developer-hub-triggers.png)
 3. Edit Trigger parameters
     - In "Choose which function to run" Select `approveProcess`
     - In "Select event source", specify when or how you want to start the script.

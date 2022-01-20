@@ -11,19 +11,19 @@ export const en: NavbarConfig = [{
         link: '/codenames/'
     },
     {
-        text: "sagelga's Documentation",
-        link: '/documentation/'
+        text: 'Compro Project',
+        link: '/compro-project/'
     },
     {
-        text: 'POS System',
-        link: '/compro-project/'
+        text: "Documentation",
+        link: '/documentation/'
     },
     {
         text: 'Project Panda',
         link: '/panda/'
     },
     {
-        text: 'Trash Melody',
+        text: 'TrashMelody',
         link: '/trashmelody/'
     },
     ],
