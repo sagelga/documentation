@@ -4,10 +4,9 @@
 import type { SidebarConfig } from '@vuepress/theme-default'
 
 export const en: SidebarConfig = {
-    '/approval-workflow/': [{
-        text: 'Documentation',
-        children: [{
-            text: 'Overall',
+    '/approval-workflow/': [
+        {
+            text: 'About',
             children: [
                 '/approval-workflow/docs/overall/start/',
                 '/approval-workflow/docs/overall/requirement/',
@@ -21,18 +20,18 @@ export const en: SidebarConfig = {
             children: [
                 '/approval-workflow/docs/develop/config/config/',
                 '/approval-workflow/docs/develop/config/response/',
-            ]
-        },
-        {
-            text: 'Module',
-            children: [
-                '/approval-workflow/docs/develop/module/email/',
-                '/approval-workflow/docs/develop/module/email-function/',
-                '/approval-workflow/docs/develop/module/functions/',
-                '/approval-workflow/docs/develop/module/main/',
-                '/approval-workflow/docs/develop/module/sheets/',
-                '/approval-workflow/docs/develop/module/sheetsInbound/',
-                '/approval-workflow/docs/develop/module/utility/',
+                {
+                    text: 'Module',
+                    children: [
+                        '/approval-workflow/docs/develop/module/email/',
+                        '/approval-workflow/docs/develop/module/email-function/',
+                        '/approval-workflow/docs/develop/module/functions/',
+                        '/approval-workflow/docs/develop/module/main/',
+                        '/approval-workflow/docs/develop/module/sheets/',
+                        '/approval-workflow/docs/develop/module/sheetsInbound/',
+                        '/approval-workflow/docs/develop/module/utility/',
+                    ]
+                },
             ]
         },
         {
@@ -42,20 +41,18 @@ export const en: SidebarConfig = {
                 '/approval-workflow/docs/maintain/issues/',
             ]
         },
-        ],
-    },
-    {
-        text: 'User Manual',
-        children: [
-            '/approval-workflow/manual/approver/',
-            '/approval-workflow/manual/requester/',
-        ]
-    },
+        {
+            text: 'User Manual',
+            children: [
+                '/approval-workflow/manual/approver/',
+                '/approval-workflow/manual/requester/',
+            ]
+        },
     ],
     '/codenames/': [
         {
-            text: 'เกี่ยวกับ',
-            link: '/codenames/',
+            text: 'About',
+            children: ['/codenames/'],
         },
         {
             text: 'Contribute',
@@ -75,7 +72,7 @@ export const en: SidebarConfig = {
             ]
         },
         {
-            text: 'เกี่ยวกับ',
+            text: 'About',
             children: [
                 '/compro-project/proposal/',
                 '/compro-project/credits/',
@@ -83,7 +80,7 @@ export const en: SidebarConfig = {
             ]
         },
         {
-            text: 'ฟีเจอร์',
+            text: 'Features',
             children: [
                 '/compro-project/feature/access-management/',
                 '/compro-project/feature/customer/',
@@ -101,7 +98,7 @@ export const en: SidebarConfig = {
     ],
     '/documentation/': [
         {
-            text: 'เกี่ยวกับ',
+            text: 'About',
             children: ['/documentation/', '/documentation/release-note/'],
         },
         {
@@ -115,7 +112,7 @@ export const en: SidebarConfig = {
     ],
     '/panda/': [
         {
-            text: 'เกี่ยวกับ',
+            text: 'About',
             children: [
                 '/panda/',
                 '/panda/proposal/',
@@ -138,14 +135,6 @@ export const en: SidebarConfig = {
         {
             text: 'Documentation',
             children: [
-                '/panda/docs/api/',
-                {
-                    text: 'Back-end',
-                    children: [
-                        '/panda/docs/back-end/apollo/',
-                        '/panda/docs/back-end/session/'
-                    ]
-                },
                 {
                     text: 'Front-end',
                     children: [
@@ -154,6 +143,14 @@ export const en: SidebarConfig = {
                         '/panda/docs/front-end/style-guide',
                     ]
                 },
+                {
+                    text: 'Back-end',
+                    children: [
+                        '/panda/docs/back-end/apollo/',
+                        '/panda/docs/back-end/session/'
+                    ]
+                },
+                '/panda/docs/api/',
                 '/panda/docs/glossary/',
             ]
         },
@@ -198,31 +195,37 @@ export const en: SidebarConfig = {
     ],
     '/trashmelody/': [
         {
-            text: 'Documentation',
-            children: [{
-                text: 'API',
-                children: ['/trashmelody/docs/api/ResultScreen/', '/trashmelody/inheritance/']
-            }]
-        },
-        {
-            text: 'User Manual',
+            text: 'About',
             children: [
-                '/trashmelody/overall/control/',
-                '/trashmelody/overall/install/',
-                '/trashmelody/overall/playlist/',
-                '/trashmelody/overall/rule/',
-            ]
-        },
-        {
-            text: 'เกี่ยวกับ',
-            children: [
-
+                '/trashmelody/',
                 '/trashmelody/overall/proposal/',
                 '/trashmelody/overall/requirement/',
                 '/trashmelody/credit/',
                 '/trashmelody/others/framework.md',
                 // '/trashmelody/others/package.md',
                 '/trashmelody/others/statistics.md',
+            ]
+        },
+        {
+            text: 'Documentation',
+            children: [
+                '/trashmelody/docs/inheritance/', {
+                    text: 'API',
+                    children: [
+                        '/trashmelody/docs/api/ResultScreen/',
+
+                    ]
+                }
+            ]
+        },
+        {
+            text: 'User Manual',
+            children: [
+                '/trashmelody/overall/install/',
+                '/trashmelody/overall/play/',
+                '/trashmelody/overall/control/',
+                '/trashmelody/overall/rule/',
+                '/trashmelody/overall/playlist/',
             ]
         },
     ],

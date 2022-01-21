@@ -51,6 +51,7 @@ export default defineUserConfig<DefaultThemeOptions>({
         },
       },
     ],
+    ['@maginapp/vuepress-plugin-katex', { delimiters: 'dollars' }]
   ],
 
   // markdown: {
