@@ -51,19 +51,5 @@ export default defineUserConfig<DefaultThemeOptions>({
         },
       },
     ],
-    ['@maginapp/vuepress-plugin-katex', { delimiters: 'dollars' }]
   ],
-
-  // markdown: {
-  //   extendMarkdown: md => {
-  //     md.set({
-  //       breaks: true
-  //     });
-  //     md.use(require('markdown-it-katexx'), {
-  //       throwOnError: false,
-  //       errorColor: ' #cc0000'
-  //     });
-  //     md.use(require('markdown-it-task-lists'));
-  //   }
-  // },
 })
