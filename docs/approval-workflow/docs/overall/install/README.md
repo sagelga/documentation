@@ -12,7 +12,7 @@ For the script to be ready to serve, here's what you will need to have before st
 ## Installing
 Before you can start using the script, here's something you need to install and manually setup.
 
-First thing you need to do is to install the script. The script will allows you to run the flow.</br>
+First thing you need to do is to install the script. The script will allows you to run the flow.<br>
 To use the script, you must have acesss to items that is defined on [System Requirement](./requirement) and do the following step(s) to complete the installation.
 
 1. Visit [https://github.com/sagelga/approval-workflow](https://github.com/sagelga/approval-workflow).

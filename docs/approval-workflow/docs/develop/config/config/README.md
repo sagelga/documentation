@@ -32,7 +32,7 @@ Default : 14
 How many steps of approval that you need.
 
 ::: danger DANGER
-Script currently supports 2 steps of approval.</br>
+Script currently supports 2 steps of approval.<br>
 Dynamic steps is not being developed yet.
 :::
 

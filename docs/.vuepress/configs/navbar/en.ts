@@ -1,0 +1,30 @@
+import type { NavbarConfig } from '@vuepress/theme-default'
+
+export const en: NavbarConfig = [{
+    text: 'Projects',
+    children: [{
+        text: 'Approval Workflow',
+        link: '/approval-workflow/'
+    },
+    {
+        text: 'Codenames',
+        link: '/codenames/'
+    },
+    {
+        text: 'Compro Project',
+        link: '/compro-project/'
+    },
+    {
+        text: "Documentation",
+        link: '/documentation/'
+    },
+    {
+        text: 'Project Panda',
+        link: '/panda/'
+    },
+    {
+        text: 'TrashMelody',
+        link: '/trashmelody/'
+    },
+    ],
+}]
