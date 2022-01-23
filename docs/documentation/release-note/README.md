@@ -1,4 +1,13 @@
 # Release Note
+## 2022-01-20
+- Migrate website to VuePress 2 (beta)
+- Change the website font to Anuphan for Thai language
+  - We still use IBM Plex Sans for English and IBM Plex Mono for codeblocks
+- Update the configuration file
+- Offload the sitebar and navbar into individual component
+## 2022-01-xx
+- Fully using CloudFlare to make the website load faster
+  - Also enabling Rocket Loader for faster page loading time
 ## 2021-03-20
 - <Badge text="New" type="tip"/> Create documentation for Documentation repo
   - Kinda trippy isn't it?
