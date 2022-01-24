@@ -1,8 +1,7 @@
 import type { NavbarConfig } from '@vuepress/theme-default'
 
-export const en: NavbarConfig = [{
-    text: 'Projects',
-    children: [{
+export const en: NavbarConfig = [
+    {
         text: 'Approval Workflow',
         link: '/approval-workflow/'
     },
@@ -26,5 +25,8 @@ export const en: NavbarConfig = [{
         text: 'TrashMelody',
         link: '/trashmelody/'
     },
-    ],
-}]
+    {
+        text: 'GitHub',
+        link: 'https://github.com/sagelga'
+    }
+]
