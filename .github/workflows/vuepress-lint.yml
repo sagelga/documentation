@@ -1,13 +1,12 @@
 # This is a basic workflow to help you get started with Actions
 
-name: Vuepress Lint
+name: Code Linting
 
 # Controls when the action will run.
 on:
   push:
     branches:
-      - '**'        # matches every branch
-      - '!develop'
+      - "**" # matches every branch
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -15,12 +14,12 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout Code
-      uses: actions/checkout@v2
+      - name: Checkout Code
+        uses: actions/checkout@v2
 
-    # Runs the Super-Linter action
-    - name: Run Super-Linter
-      uses: github/super-linter@v4.8.5
-      env:
-        DEFAULT_BRANCH: main
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      # Runs the Super-Linter action
+      - name: Run Super-Linter
+        uses: github/super-linter@v4.8.5
+        env:
+          DEFAULT_BRANCH: main
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
