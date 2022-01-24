@@ -6,23 +6,24 @@ export default defineUserConfig<DefaultThemeOptions>({
   title: "Documentation",
   description: 'Documentation for sagelga project',
 
-  // head: [
-  //   ['link', {
-  //     rel: 'stylesheet',
-  //     href: 'https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css'
-  //   }],
-  //   ['link', {
-  //     rel: 'stylesheet',
-  //     href: 'https://cdn.jsdelivr.net/github-markdown-css/2.2.1/github-markdown.css'
-  //   }]
-  // ],
+  head: [
+    //   ['link', {
+    //     rel: 'stylesheet',
+    //     href: 'https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css'
+    //   }],
+    //   ['link', {
+    //     rel: 'stylesheet',
+    //     href: 'https://cdn.jsdelivr.net/github-markdown-css/2.2.1/github-markdown.css'
+    //   }]
+    ['link', { rel: 'icon', href: 'https://img.icons8.com/fluency/32/000000/layers.png' }],
+  ],
 
   // https://v2.vuepress.vuejs.org/reference/default-theme/config.html
   theme: '@vuepress/theme-default',
   themeConfig: {
     home: '/',
 
-    logo: 'https://img.icons8.com/fluency/64/000000/layers.png',
+    logo: 'https://img.icons8.com/fluency/32/000000/layers.png',
 
     navbar: navbar.en,
     sidebar: sidebar.en,
