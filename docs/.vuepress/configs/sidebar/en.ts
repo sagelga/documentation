@@ -11,8 +11,9 @@ export const en: SidebarConfig = {
                 '/approval-workflow/docs/overall/start/',
                 '/approval-workflow/docs/overall/requirement/',
                 '/approval-workflow/docs/overall/install/',
-                '/approval-workflow/docs/overall/status/',
+                '/approval-workflow/docs/overall/setup/',
                 '/approval-workflow/docs/overall/how-it-works/',
+                '/approval-workflow/docs/overall/status/',
             ]
         },
         {
@@ -99,7 +100,9 @@ export const en: SidebarConfig = {
     '/documentation/': [
         {
             text: 'About',
-            children: ['/documentation/', '/documentation/release-note/'],
+            children: [
+                '/documentation/',
+                { text: 'Release Notes', link: 'https://github.com/sagelga/documentation/releases' }],
         },
         {
             text: 'Customization',

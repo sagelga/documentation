@@ -22,7 +22,7 @@ export const en: NavbarConfig = [
         link: '/panda/'
     },
     {
-        text: 'TrashMelody',
+        text: 'Trash Melody',
         link: '/trashmelody/'
     },
     {

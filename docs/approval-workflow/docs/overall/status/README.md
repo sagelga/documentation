@@ -1,25 +1,42 @@
 # Approval Status
-For each of the approval request, it will only contains one of the four status listed below
 
-1. **Approved**<br>
-    Approver of that level has approved the request. The request will either
-    1. Send to the team that are response of doing what the approver wants to
-    2. Elevate the request to another approver. This will restart the process, but with a `Step [current_step + 1]` approver.
-2. **Rejected**<br>
-    Any approver on any level rejects the request. Requester will be notified as the request has been rejected.
-3. **Waiting**<br>
-    Request still waiting for approver's approval. Waiting request will either
-    1. Continue to wait
-    2. Resend the request via an email again after xx days of no response
-4. **Skipped** or **[anything else]**<br>
-    Request is skipped by either
-    1. Sheet Manager forced to skip this approval request.
-    2. Script forces the request to skip this request flow (i.e. Request has been Completed and Fulfilled).
-    3. Script ran to an issue, as it cannot understand the status of that request.
-5. **Finished**<br>
-   Request has been approved. E-mail has been sent to responders and everything works perfectly. Script will acts this response in the same way as 'Skipped'.
+## Type of Status
+For each of the approval request, it will only contains one of the four status as following:
 
-Script will runs and actively refreshing the status only to status that are either 'Waiting' or 'Approved'. 'Rejected' and 'Skipped' request will be skipped immedietely.
+1. Approved
+2. Rejected
+3. Waiting
+4. Skipped
+5. Finished
+6. [anything else]
+
+### Approved
+Approver of that level has approved the request. The request will either:
+
+1. Send to the team that are response of doing what the approver wants to
+2. Elevate the request to another approver. This will restart the process, but with a `Step [current_step + 1]` approver.
+
+### Rejected
+Any approver on any level rejects the request. Requester will be notified as the request has been rejected.
+
+### Waiting
+Request still waiting for approver's approval. Waiting request will either
+1. Continue to wait
+2. Resend the request via an email again after xx days of no response
+
+### Skipped or [anything else]
+Request is skipped by either:
+
+1. Sheet Manager forced to skip this approval request.
+2. Script forces the request to skip this request flow (i.e. Request has been Completed and Fulfilled).
+3. Script ran to an issue, as it cannot understand the status of that request.
+
+### Finished
+Request has been approved. E-mail has been sent to responders and everything works perfectly. Script will acts this response in the same way as 'Skipped'.
+
+Script will runs and actively refreshing the status only to status that are either 'Waiting' or 'Approved'.
+
+'Rejected' and 'Skipped' request will be skipped immedietely.
 
 ## Edit the status
 Editing the status is possible, but please make sure that the status format matches Approval Status. Here's some examples you can modify the request's status.
