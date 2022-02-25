@@ -1,7 +1,8 @@
 # Documentation
-This is the documentation for Documentation (kinda trippy isn't it?)
+Welcome to the documentation for this website, 'docs.sagelga.com', where we stores Documentation for other cool project that I've made. Kinda trippy isn't it?
 
-Anyways, this Documentation is packed with features and customizations, but the important thing is "This repo is open-sourced!".<br>
-So we will going to document every features and customizations we do, to let you copy and apply it to your Documentation site.
+Anyways, like the [license](https://github.com/sagelga/documentation/blob/main/.github/LICENSE) says, you can do anything you like to with this documentation (this is not a legal advice), so anyone with brillant ideas can help and improve (or mess it all up) this project as you like. No rush.
 
-This documentation site is powered by Vuepress, framework create based on Vue.
+I will try to document anything as we keep improving this Documentation website.
+
+This site is powered by Vuepress, built with Vue.
