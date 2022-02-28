@@ -4,7 +4,7 @@ heroImage: https://img.icons8.com/fluency/128/000000/layers.png
 heroAlt: Website's Logo
 heroText: sagelga's Documentation
 tagline: Documentation Page for sagelga's project
-footer: © 2021 Kunanon Srisuntiroj
+footer: © 2019-2022 Kunanon Srisuntiroj
 
 actions:
     - text: Approval Workflow
@@ -19,6 +19,9 @@ actions:
     - text: Documentation
       link: /documentation/
       type: secondary
+    - text: Oh Sheet!
+      link: /oh-sheet/
+      type: secondary
     - text: Project Panda
       link: /panda/
       type: secondary
@@ -28,13 +31,13 @@ actions:
 
 features:
   - title: Everyone's here
-    details: All of sagelga's project documentation is here to serve!
+    details: All of @sagelga project documentation and user manual is here to serve!
   - title: Created with VuePress
-    details: Enjoy the hackable and enjoyable VuePress 2.0 (beta) website.
+    details: Enjoy the hackable and enjoyable website, powered by VuePress 2.
   - title: Dark Mode
-    details: ✨Fancy! Click the ☼ icon to use Dark Mode
+    details: ✨ Click the ☼ icon on Navigation Bar to switch between modes.
 ---
 
 ::: tip Available Now
-My profile website is now live! Visit [sagelga.com](https://sagelga.com/).
+My profile website is now live! Visit [www.sagelga.com](https://www.sagelga.com/).
 :::
