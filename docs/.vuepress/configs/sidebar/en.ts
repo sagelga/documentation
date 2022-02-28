@@ -113,6 +113,16 @@ export const en: SidebarConfig = {
             ]
         }
     ],
+    '/oh-sheet/': [
+        {
+            text: 'About',
+            children: [
+                '/oh-sheet/',
+                '/oh-sheet/overview/about/',
+                '/oh-sheet/overview/feature/',
+            ]
+        }
+    ],
     '/panda/': [
         {
             text: 'About',
