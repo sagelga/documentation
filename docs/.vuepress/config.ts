@@ -64,13 +64,11 @@ export default defineUserConfig<DefaultThemeOptions>({
       },
     ],
     [
-      "@vuepress/plugin-search",
+      "@vuepress/docsearch",
       {
-        locales: {
-          "/": {
-            placeholder: "Search",
-          },
-        },
+        appId: "VIR8TV46UV",
+        apiKey: "b4ef90b459d81c338bf1f61b2ad2ad06",
+        indexName: "sagelga",
       },
     ],
   ],
