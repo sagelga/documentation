@@ -4,7 +4,9 @@ Normally, this college/faculty has a very few classrooms, so their schedule is q
 
 Based on their request form, they have the same procedures and form requirements as other faculties. This means other faculties’ forms or written-type form can be used with AMC seamlessly.
 
-They also have a room usage schedule in front of every room that can be reserved. We have seen this format of schedule at Princess Sirindhorn’s General Instruction Building Educational Support, which was exported and printed from Office of Regis-trar website.
+They also have a room usage schedule in front of every room that can be reserved. We have seen this format of schedule at Princess Sirindhorn’s General Instruction Building Educational Support, which was exported and printed from Office of Registrar website.
+
+![](./img/msedge_HBJVOR50Ev.png)
 
 ## The Request Form
 The request form requires:
