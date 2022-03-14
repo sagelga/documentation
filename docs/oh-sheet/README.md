@@ -1,4 +1,4 @@
-# Oh Sheet!
+# About
 ## ความสำคัญและที่มาของระบบ
 เนื่องจากปัญหาที่ว่าผู้ใช้งานต้องการอ่านสรุปบทเรียน เพื่อให้ตามการเรียนในห้องเรียนทัน หรือทำการอ่านทบทวนเพื่อสอบ ซึ่งวิธีดั้งเดิมนั่นก็คือ การขอสรุปของเพื่อน และนำไปถ่ายเอกสาร หรือให้เพื่อนส่งไฟล์ที่จดสรุปมาให้ตนผ่าน PDF แต่การขอเพื่อนคนอื่นๆ เป็นเรื่องที่ผู้ใช้งานหลายๆคนรู้สึกเกรงใจ
 
@@ -34,17 +34,17 @@ We are team My Little Pony (Team #17) from IT KMITL
 
 | รูปโปรไฟล์                                      | ชื่อ                                                 | รหัสนักศึกษา | บัญชี GitHub                                 |
 |-----------------------------------------------|----------------------------------------------------|-----------|--------------------------------------------|
-| <img src="https://github.com/sagelga.png?size=75">   | Kunanon Srisuntiroj คุณานนต์ ศรีสันติโรจน์               | 59070022  | [@sagelga](https://github.com/sagelga)     |
-| <img src="./overview/about/img/59070043.png" height="75px">    | Thitipat Worrarat ฐิติภัทร วรรัตน์                      | 59070043  | [@ynhof6](https://github.com/ynhof6)       |
-| <img src="https://github.com/tiltgod.png?size=75">   | Napasin Hongngern นภสินธุ์ หงษ์เงิน                     | 59070084  | [@tiltgod](https://github.com/tiltgod)     |
-| <img src="https://github.com/dobakung.png?size=75">  | Nathan Yiangsupapaanontr นาธาร เยี่ยงศุภพนนทร์         | 59070087  | [@dobakung](https://github.com/dobakung)   |
-| <img src="./overview/about/img/59070117.png" height="75px"> | Patcharaphorn Lertvirul พัชรพร เลิศวิรุฬห์              | 59070117  | [@kukkikkpl](https://github.com/kukkikkpl) |
-| <img src="./overview/about/img/59070120.png" height="75px">   | Pimpitcha Pitichotchokphokhin พิมพ์พิชชา ปิติโชติโชคโภคิน | 59070120  | [@anjo120](https://github.com/anjo120)     |
+| <img src="https://github.com/sagelga.png?size=75">   | Kunanon Srisuntiroj<br>คุณานนต์ ศรีสันติโรจน์               | 59070022  | [@sagelga](https://github.com/sagelga)     |
+| <img src="./img/59070043.png" height="75px">    | Thitipat Worrarat<br>ฐิติภัทร วรรัตน์                      | 59070043  | [@ynhof6](https://github.com/ynhof6)       |
+| <img src="https://github.com/tiltgod.png?size=75">   | Napasin Hongngern<br>นภสินธุ์ หงษ์เงิน                     | 59070084  | [@tiltgod](https://github.com/tiltgod)     |
+| <img src="https://github.com/dobakung.png?size=75">  | Nathan Yiangsupapaanontr<br>นาธาร เยี่ยงศุภพนนทร์         | 59070087  | [@dobakung](https://github.com/dobakung)   |
+| <img src="./img/59070117.png" height="75px"> | Patcharaphorn Lertvirul<br>พัชรพร เลิศวิรุฬห์              | 59070117  | [@kukkikkpl](https://github.com/kukkikkpl) |
+| <img src="./img/59070120.png" height="75px">   | Pimpitcha Pitichotchokphokhin<br>พิมพ์พิชชา ปิติโชติโชคโภคิน | 59070120  | [@anjo120](https://github.com/anjo120)     |
 
 ### อาจารย์ที่ปรึกษา
 ผศ.ดร.ธีรพงศ์ ลีลานุภาพ
 
-<img src="./overview/about/img/KimLee.jpg" height='75px'>
+<img src="./img/KimLee.jpg" height='75px'>
 
 รายงาน ซอร์สโค้ด และข้อมูลทางสารสนเทศที่เกี่ยวข้อง
 เป็นส่วนหนึ่งของโครงงานวิชา วิศวกรรมซอฟท์แวร์ (Software Engineering) รหัสวิชา 06016219<br>

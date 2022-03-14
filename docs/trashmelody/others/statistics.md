@@ -1,4 +1,4 @@
-# Statistics
+# สถิติ
 | File                                                       | Blank Line | Comment Line | Code |
 | ---------------------------------------------------------- | ---------- | ------------ | ---- |
 | utils/GifDecoder.java                                      | 45         | 134          | 559  |

@@ -9,25 +9,28 @@ footer: © 2019-2022 Kunanon Srisuntiroj
 actions:
     - text: Approval Workflow
       link: /approval-workflow/
-      type: secondary
+      type: primary
     - text: Codenames
       link: /codenames/
-      type: secondary
+      type: primary
     - text: Compro-project
       link: /compro-project/
-      type: secondary
+      type: primary
+    - text: Data Journal
+      link: /data-journal/
+      type: primary
     - text: Documentation
       link: /documentation/
-      type: secondary
+      type: primary
     - text: Oh Sheet!
       link: /oh-sheet/
-      type: secondary
+      type: primary
     - text: Project Panda
       link: /panda/
-      type: secondary
+      type: primary
     - text: TrashMelody
       link: /trashmelody/
-      type: secondary
+      type: primary
 
 features:
   - title: Everyone's here

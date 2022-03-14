@@ -6,7 +6,7 @@ import type { SidebarConfig } from "@vuepress/theme-default";
 export const en: SidebarConfig = {
   "/approval-workflow/": [
     {
-      text: "About",
+      text: "Approval Workflow",
       children: [
         "/approval-workflow/docs/overall/start/",
         "/approval-workflow/docs/overall/requirement/",
@@ -52,7 +52,7 @@ export const en: SidebarConfig = {
   ],
   "/codenames/": [
     {
-      text: "About",
+      text: "Codenames",
       children: ["/codenames/"],
     },
     {
@@ -70,7 +70,7 @@ export const en: SidebarConfig = {
       ],
     },
     {
-      text: "About",
+      text: "Compro Project",
       children: [
         "/compro-project/proposal/",
         "/compro-project/credits/",
@@ -94,9 +94,15 @@ export const en: SidebarConfig = {
       ],
     },
   ],
+  "/data-journal/": [
+    {
+      text: "Data Journal",
+      children: ["/data-journal/", "/data-journal/report/"],
+    },
+  ],
   "/documentation/": [
     {
-      text: "About",
+      text: "Documentation",
       children: [
         "/documentation/",
         {
@@ -116,7 +122,7 @@ export const en: SidebarConfig = {
   ],
   "/oh-sheet/": [
     {
-      text: "About",
+      text: "Oh Sheet!",
       children: [
         "/oh-sheet/",
         "/oh-sheet/overview/about/",
@@ -126,7 +132,7 @@ export const en: SidebarConfig = {
   ],
   "/panda/": [
     {
-      text: "About",
+      text: "Project Panda",
       children: [
         "/panda/",
         "/panda/proposal/",
@@ -210,7 +216,7 @@ export const en: SidebarConfig = {
   ],
   "/trashmelody/": [
     {
-      text: "About",
+      text: "TrashMelody",
       children: [
         "/trashmelody/",
         "/trashmelody/overall/proposal/",
@@ -218,7 +224,7 @@ export const en: SidebarConfig = {
         "/trashmelody/credit/",
         "/trashmelody/others/framework.md",
         // '/trashmelody/others/package.md',
-        "/trashmelody/others/statistics.md",
+        // "/trashmelody/others/statistics.md",
       ],
     },
     {
