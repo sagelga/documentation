@@ -8,3 +8,5 @@ The schedule gives information about:
 -	dates and times of use
 
 The schedule, on the contrary, does not give information about events that will use a room only once or twice.
+
+![](./img/msedge_GbtClAt5xU.png)

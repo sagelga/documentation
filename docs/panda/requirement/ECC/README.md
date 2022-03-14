@@ -25,3 +25,5 @@ They told us that the service was unpopular, so we asked them why lecturers avoi
 -	There were a very few overlapping reservations, so most reservations would be approved.
 
 Ultimately, they decided to use Microsoft Excel instead of using the old service. It was easier, and they could customize it whatever they like their schedule to be. And they came up with this format of showing time schedules.
+
+![](./img/msedge_UsS8BEECY1.png)

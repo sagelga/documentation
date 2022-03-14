@@ -6,3 +6,5 @@ Robin is a subscription service priced at $5 per month per user, which may rack 
 The service also includes API’s that allow Internet of Thing devices to display current room usage and upcoming reservations. It is advertised to work on any screen size and even e-ink screens.
 
 Robin has an easy-to-use user interface. A user can click on a space to see more infor-mation about the space or click on a timeframe to reserve it right away.
+
+![](./img/msedge_NyeTMUGk4K.png)
