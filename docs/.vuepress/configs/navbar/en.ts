@@ -21,6 +21,10 @@ export const en: NavbarConfig = [
         link: "/compro-project/",
       },
       {
+        text: "Data Journal",
+        link: "/data-journal/",
+      },
+      {
         text: "Documentation",
         link: "/documentation/",
       },
