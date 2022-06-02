@@ -1,11 +1,14 @@
-import { defineUserConfig } from "vuepress";
-import type { DefaultThemeOptions } from "vuepress";
+import { defineUserConfig } from "@vuepress/cli";
+import { defaultTheme } from "@vuepress/theme-default";
+import { googleAnalyticsPlugin } from "@vuepress/plugin-google-analytics";
+import { docsearchPlugin } from "@vuepress/plugin-docsearch";
 import { navbar, sidebar } from "./configs";
 
-export default defineUserConfig<DefaultThemeOptions>({
-  title: "Documentation",
-  description: "Documentation for sagelga project",
+export default defineUserConfig({
+  // set site base to default value
+  base: "/",
 
+  // extra tags in `<head>`
   head: [
     [
       "link",
@@ -23,53 +26,37 @@ export default defineUserConfig<DefaultThemeOptions>({
     ],
   ],
 
-  // https://v2.vuepress.vuejs.org/reference/default-theme/config.html
-  theme: "@vuepress/theme-default",
-  themeConfig: {
-    home: "/",
-
-    logo: "https://img.icons8.com/fluency/32/000000/layers.png",
-
-    navbar: navbar.en,
-    sidebar: sidebar.en,
-
-    lastUpdated: true,
-    lastUpdatedText: "Last Update (UTC)",
-
-    editLink: true,
-    editLinkText: "Report an Issue",
-
-    contributors: true,
-    contributorsText: "Contributor(s)",
-
-    repo: "sagelga/documentation",
-    repoLabel: "GitHub",
-
-    docsRepo: "sagelga/documentation",
-    docsDir: "docs",
-    docsBranch: "main",
-
-    algolia: {
-      apiKey: "2022a723efeacc48b1a28b16f653ecbc",
-      appId: "7B46GHWF8J",
-      indexName: "documentation",
+  locales: {
+    "/": {
+      lang: "en-US",
+      title: "Documentation",
+      description: "Documentation for sagelga project",
     },
   },
 
+  theme: defaultTheme({
+    logo: "https://img.icons8.com/fluency/32/000000/layers.png",
+    repo: "sagelga/documentation",
+    docsRepo: "sagelga/documentation",
+    docsBranch: "main",
+
+    locales: {
+      "/": {
+        navbar: navbar.en,
+        sidebar: sidebar.en,
+        editLinkText: "Edit this page on GitHub",
+      },
+    },
+  }),
+
   plugins: [
-    [
-      "@vuepress/plugin-google-analytics",
-      {
-        id: "G-BTF0LX3HTD",
-      },
-    ],
-    [
-      "@vuepress/docsearch",
-      {
-        appId: "VIR8TV46UV",
-        apiKey: "b4ef90b459d81c338bf1f61b2ad2ad06",
-        indexName: "sagelga",
-      },
-    ],
+    docsearchPlugin({
+      appId: "VIR8TV46UV",
+      apiKey: "b4ef90b459d81c338bf1f61b2ad2ad06",
+      indexName: "sagelga",
+    }),
+    googleAnalyticsPlugin({
+      id: "G-BTF0LX3HTD",
+    }),
   ],
 });
