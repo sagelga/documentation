@@ -1,15 +1,15 @@
 import { defineUserConfig } from "@vuepress/cli";
-import { defaultTheme } from "@vuepress/theme-default";
-import { googleAnalyticsPlugin } from "@vuepress/plugin-google-analytics";
 import { docsearchPlugin } from "@vuepress/plugin-docsearch";
-import { header, navbar, sidebar } from "./configs";
+import { googleAnalyticsPlugin } from "@vuepress/plugin-google-analytics";
+import { defaultTheme } from "@vuepress/theme-default";
+import { head, navbarEn, sidebarEn } from "./configs";
 
 export default defineUserConfig({
   // set site base to default value
   base: "/",
 
   // extra tags in `<head>`
-  head: header,
+  head,
 
   locales: {
     "/": {
@@ -27,8 +27,8 @@ export default defineUserConfig({
 
     locales: {
       "/": {
-        navbar: navbar.en,
-        sidebar: sidebar.en,
+        navbar: navbarEn,
+        sidebar: sidebarEn,
         editLinkText: "Edit this page on GitHub",
       },
     },
