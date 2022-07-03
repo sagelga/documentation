@@ -1,6 +1,6 @@
 import type { NavbarConfig } from "@vuepress/theme-default";
 
-export const en: NavbarConfig = [
+export const navbarEn: NavbarConfig = [
   {
     text: "Home",
     link: "/",

@@ -1,6 +1,6 @@
 import type { HeadConfig } from "@vuepress/core";
 
-export const header: HeadConfig[] = [
+export const head: HeadConfig[] = [
   [
     "link",
     {
@@ -26,10 +26,32 @@ export const header: HeadConfig[] = [
       href: "https://cdn.jsdelivr.net/github-markdown-css/2.2.1/github-markdown.css",
     },
   ],
-  //   ["meta", { name: "application-name", content: "sagelga's Documentation" }],
-  //   [
-  //     "meta",
-  //     { name: "apple-mobile-web-app-title", content: "sagelga's Documentation" },
-  //   ],
-  //   ["meta", { name: "apple-mobile-web-app-status-bar-style", content: "black" }],
+  [
+    "meta",
+    {
+      name: "google-site-verification",
+      content: "YfryvcUpXvpvzX8xdK2JY2yad89if-kCk1Mo7ogs5Is",
+    },
+  ],
+  [
+    "meta",
+    {
+      name: "application-name",
+      content: "sagelga's Documentation",
+    },
+  ],
+  [
+    "meta",
+    {
+      name: "apple-mobile-web-app-title",
+      content: "sagelga's Documentation",
+    },
+  ],
+  [
+    "meta",
+    {
+      name: "apple-mobile-web-app-status-bar-style",
+      content: "black",
+    },
+  ],
 ];

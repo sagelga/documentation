@@ -1,3 +1,3 @@
-export * as navbar from "./navbar";
-export * as sidebar from "./sidebar";
-export * as header from "./header";
+export * from "./head";
+export * from "./navbar";
+export * from "./sidebar";
