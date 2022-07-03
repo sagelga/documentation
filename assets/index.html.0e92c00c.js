@@ -1,0 +1,1 @@
+import{_ as a,o as r,c as d,a as e,d as t}from"./app.76739b9c.js";const o={},c=e("h1",{id:"dark-mode",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#dark-mode","aria-hidden":"true"},"#"),t(" Dark Mode")],-1),n=[c];function s(_,i){return r(),d("div",null,n)}var l=a(o,[["render",s],["__file","index.html.vue"]]);export{l as default};

@@ -1,0 +1,1 @@
+const a=JSON.parse('{"key":"v-38e79002","path":"/approval-workflow/","title":"Approval Workflow","lang":"en-US","frontmatter":{},"excerpt":"","headers":[],"git":{"updatedTime":1656860844000,"contributors":[{"name":"Kunanon Srisuntiroj","email":"son9912@gmail.com","commits":1}]},"filePathRelative":"approval-workflow/README.md"}');export{a as data};

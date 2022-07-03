@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-6fcb65f6","path":"/documentation/custom/dark-mode/","title":"Dark Mode","lang":"en-US","frontmatter":{},"excerpt":"","headers":[],"git":{"updatedTime":1656860844000,"contributors":[{"name":"Kunanon Srisuntiroj","email":"son9912@gmail.com","commits":1}]},"filePathRelative":"documentation/custom/dark-mode/README.md"}');export{t as data};

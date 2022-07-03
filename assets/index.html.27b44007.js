@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-2f412e13","path":"/compro-project/feature/main-menu/","title":"Main menu","lang":"en-US","frontmatter":{},"excerpt":"","headers":[],"git":{"updatedTime":1656860844000,"contributors":[{"name":"Kunanon Srisuntiroj","email":"son9912@gmail.com","commits":1}]},"filePathRelative":"compro-project/feature/main-menu/README.md"}');export{e as data};

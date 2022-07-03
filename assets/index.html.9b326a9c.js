@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-ee9e8f24","path":"/panda/requirement/student/","title":"Students\u2019 Study Schedules","lang":"en-US","frontmatter":{},"excerpt":"","headers":[],"git":{"updatedTime":1656860844000,"contributors":[{"name":"Kunanon Srisuntiroj","email":"son9912@gmail.com","commits":1}]},"filePathRelative":"panda/requirement/student/README.md"}');export{e as data};

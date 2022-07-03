@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-fe2b0184","path":"/compro-project/","title":"Point of Sale (POS)","lang":"en-US","frontmatter":{},"excerpt":"","headers":[],"git":{"updatedTime":1656860844000,"contributors":[{"name":"Kunanon Srisuntiroj","email":"son9912@gmail.com","commits":1}]},"filePathRelative":"compro-project/README.md"}');export{e as data};

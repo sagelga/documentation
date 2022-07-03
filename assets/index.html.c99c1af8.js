@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-3cfd5a86","path":"/trashmelody/docs/api/ResultScreen/","title":"setGrade()","lang":"en-US","frontmatter":{},"excerpt":"","headers":[],"git":{"updatedTime":1656860844000,"contributors":[{"name":"Kunanon Srisuntiroj","email":"son9912@gmail.com","commits":1}]},"filePathRelative":"trashmelody/docs/api/ResultScreen/README.md"}');export{e as data};

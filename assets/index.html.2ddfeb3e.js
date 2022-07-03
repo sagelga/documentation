@@ -1,0 +1,1 @@
+const a=JSON.parse('{"key":"v-9d153a22","path":"/approval-workflow/docs/maintain/","title":"Maintaining Guidelines","lang":"en-US","frontmatter":{},"excerpt":"","headers":[],"git":{"updatedTime":1656860844000,"contributors":[{"name":"Kunanon Srisuntiroj","email":"son9912@gmail.com","commits":1}]},"filePathRelative":"approval-workflow/docs/maintain/README.md"}');export{a as data};

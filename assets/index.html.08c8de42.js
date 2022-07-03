@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-e3737464","path":"/panda/","title":"About \u{1F43C}","lang":"en-US","frontmatter":{},"excerpt":"","headers":[],"git":{"updatedTime":1656860844000,"contributors":[{"name":"Kunanon Srisuntiroj","email":"son9912@gmail.com","commits":1}]},"filePathRelative":"panda/README.md"}');export{t as data};

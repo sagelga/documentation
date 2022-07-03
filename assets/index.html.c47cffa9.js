@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-066dea35","path":"/panda/requirement/reg/","title":"Room Usage Schedule System Analysis","lang":"en-US","frontmatter":{},"excerpt":"","headers":[],"git":{"updatedTime":1656860844000,"contributors":[{"name":"Kunanon Srisuntiroj","email":"son9912@gmail.com","commits":1}]},"filePathRelative":"panda/requirement/reg/README.md"}');export{e as data};
