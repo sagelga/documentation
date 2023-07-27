@@ -1,87 +1,97 @@
 # กฎการเล่นเกม
+
 ผู้เล่นต้องทำการแยกขยะลงถังที่ถูกต้อง เมื่อผู้เล่นแยกขยะลงถังที่ถูกต้องผู้เล่นจะได้รับคะแนนตามความแม่นยำที่กดได้
 
 ภายในเกมจะมีขยะอยู่ 12 ลักษณะ โดยมีประเภทของขยะ 4 ประเภทได้แก่
-- ขยะอันตราย
-- ขยะรีไซเคิล
-- ขยะเปียก
-- ขยะทั่วไป
+
+-   ขยะอันตราย
+-   ขยะรีไซเคิล
+-   ขยะเปียก
+-   ขยะทั่วไป
 
 โดยเมื่อเกมเริ่มต้นขึ้น จะมีขยะขึ้นมาเพื่อให้ผู้เล่นได้ทำการคัดแยก โดยที่ผู้เล่นจะต้องทำการคัดแยกเมื่อขยะนั้นอยู่ในเส้นคัดแยก (เส้นสีขาว) ด้วยการกดแป้นบนคีย์บอร์ด
 
 ## การให้คะแนน
+
 เมื่อผู้เล่นทำการแยกขยะ (กดคีย์ตามประเภทขยะ) เกมจะทำการคำนวณคะแนนและให้คะแนนตามความถูกต้องในการแยกขยะและตามระดับความยากของเกม
 
 หากผู้เล่นกดช้า/เร็วเกินไป หรือกดแยกประเภทไม่ถูกต้อง คะแนนที่จะได้จะถูกลดลงลดหลั่นกันไปตามแตกต่างระหว่างเวลาที่ให้กดและเวลาที่ผู้เล่นกด โดยเกมจะแสดงสถานะว่าผู้เล่นกดโน้ตเพลงนั้นแล้วได้กี่คะแนน
 
-| ภาพ                                             | ประเภท  | คะแนนที่ได้รับ |
-| ----------------------------------------------- | ------- | ---------- |
-| <img src="./img/score/perfect.png" height=64px> | Perfect | 8,000      |
-| <img src="./img/score/good.png" height=64px>    | Good    | 7,000      |
-| <img src="./img/score/cool.png" height=64px>    | Cool    | 5,000      |
-| <img src="./img/score/bad.png" height=64px>     | Bad     | 2,000      |
-| <img src="./img/score/missed.png" height=64px>  | Missed  | 0          |
+| ภาพ                                                | ประเภท  | คะแนนที่ได้รับ |
+| -------------------------------------------------- | ------- | -------------- |
+| <img src="./img/score/perfect.png" height="64px"/> | Perfect | 8,000          |
+| <img src="./img/score/good.png" height="64px"/>    | Good    | 7,000          |
+| <img src="./img/score/cool.png" height="64px"/>    | Cool    | 5,000          |
+| <img src="./img/score/bad.png" height="64px"/>     | Bad     | 2,000          |
+| <img src="./img/score/missed.png" height="64px"/>  | Missed  | 0              |
 
 ## หลอดเลือด
+
 หากว่าผู้เล่นทำการกดแยกขยะได้ไม่ถูกต้อง (Missed) หรือได้ Bad เกมจะทำการหักหลอดเลือดตามประเภทความผิดพลาด
 แต่ผู้เล่นก็สามารถได้รับเลิอดคืนมาจากการแยกขยะให้ได้ Perfect, Great, หรือ Nice โดยก็จะได้มากน้อยตามระดับความถูกต้องจนเลือดเต็มหลอดอีกครั้ง
 หากว่าแถบเลือดลดลงเหลือ 0 เกมจะจบทันที
 
 | ประเภท  | เลือดที่ได้รับ |
-| ------- | --------- |
-| Perfect | 30        |
-| Good    | 20        |
-| Cool    | 10        |
-| Bad     | -300      |
-| Missed  | -500      |
+| ------- | -------------- |
+| Perfect | 30             |
+| Good    | 20             |
+| Cool    | 10             |
+| Bad     | -300           |
+| Missed  | -500           |
 
 ## หน้าผลลัพธ์
+
 หลังจากผู้เล่นได้ทำการเล่นเพลงเสร็จเป็นที่เรียบร้อยแล้ว ตัวเกมจะสร้างผลลัพธ์ให้ผู้เล่นได้ดู ว่ากดได้ประเภทใดบ้าง และกี่คะแนน โดยจะมีการแสดงเกรด ตั้งแต่ A, B, C, D และ F บอกตามประสิทธิภาพของผู้เล่น ว่าได้คะแนนมากขนาดใด โดยผู้เล่นสามารถเข้าไปเล่นด่านนั้นใหม่ เพื่อแก้ไขคะแนน High Score ได้
 
 ![](./img/Picture3.png)
 
 โดยเกณฑ์การให้เกรดนั้นมีดังนี้
-| เกรด | เปอร์เซนต์คะแนน   |
+| เกรด | เปอร์เซนต์คะแนน |
 | ---- | --------------- |
-| A    | > 90%           |
-| B    | > 65% และ < 90% |
-| C    | > 50% และ < 65% |
-| D    | > 40% และ < 50% |
-| F    | < 40%           |
+| A | > 90% |
+| B | > 65% และ < 90% |
+| C | > 50% และ < 65% |
+| D | > 40% และ < 50% |
+| F | < 40% |
 
 ## ประเภทขยะ
+
 ### ขยะอันตราย
-| ภาพ                                                   | ชื่อขยะ     |
-| ----------------------------------------------------- | --------- |
-| <img src="./img/dangerous/thinner.png" height=64px>   | ทินเนอร์    |
-| <img src="./img/dangerous/hairspray.png" height=64px> | สเปรย์ฉีดผม |
-| <img src="./img/dangerous/lubricant.png" height=64px> | น้ำมันหล่อลื่น  |
-| <img src="./img/dangerous/cigarette.png" height=64px> | บุหรี่       |
+
+| ภาพ                                                      | ชื่อขยะ        |
+| -------------------------------------------------------- | -------------- |
+| <img src="./img/dangerous/thinner.png" height="64px"/>   | ทินเนอร์       |
+| <img src="./img/dangerous/hairspray.png" height="64px"/> | สเปรย์ฉีดผม    |
+| <img src="./img/dangerous/lubricant.png" height="64px"/> | น้ำมันหล่อลื่น |
+| <img src="./img/dangerous/cigarette.png" height="64px"/> | บุหรี่         |
 
 ### ขยะรีไซเคิล
-| ภาพ                                                     | ชื่อขยะ       |
-| ------------------------------------------------------- | ----------- |
-| <img src="./img/recycle/plasticbox.png" height=64px>    | ถาดพลาสติก   |
-| <img src="./img/recycle/paperscrap.png" height=64px>    | เศษกระดาษ   |
-| <img src="./img/recycle/plasticmug.png" height=64px>    | แก้วพลาสติก   |
-| <img src="./img/recycle/paper.png" height=64px>         | กระดาษใช้แล้ว |
-| <img src="./img/recycle/cartonbox.png" height=64px>     | กล่องลัง      |
-| <img src="./img/recycle/plasticbottle.png" height=64px> | ขวดพลาสติก   |
+
+| ภาพ                                                        | ชื่อขยะ       |
+| ---------------------------------------------------------- | ------------- |
+| <img src="./img/recycle/plasticbox.png" height="64px"/>    | ถาดพลาสติก    |
+| <img src="./img/recycle/paperscrap.png" height="64px"/>    | เศษกระดาษ     |
+| <img src="./img/recycle/plasticmug.png" height="64px"/>    | แก้วพลาสติก   |
+| <img src="./img/recycle/paper.png" height="64px"/>         | กระดาษใช้แล้ว |
+| <img src="./img/recycle/cartonbox.png" height="64px"/>     | กล่องลัง      |
+| <img src="./img/recycle/plasticbottle.png" height="64px"/> | ขวดพลาสติก    |
 
 ### ขยะเปียก
-| ภาพ                                            | ชื่อขยะ   |
-| ---------------------------------------------- | ------- |
-| <img src="./img/wet/popcorn.png" height=64px>  | ป๊อปคอร์น |
-| <img src="./img/wet/donut.png" height=64px>    | โดนัท    |
-| <img src="./img/wet/curry.png" height=64px>    | แกงกะหรี่ |
-| <img src="./img/wet/tea.png" height=64px>      | ชาเขียว  |
-| <img src="./img/wet/icecream.png" height=64px> | ไอศกรีม  |
+
+| ภาพ                                               | ชื่อขยะ   |
+| ------------------------------------------------- | --------- |
+| <img src="./img/wet/popcorn.png" height="64px"/>  | ป๊อปคอร์น |
+| <img src="./img/wet/donut.png" height="64px"/>    | โดนัท     |
+| <img src="./img/wet/curry.png" height="64px"/>    | แกงกะหรี่ |
+| <img src="./img/wet/tea.png" height="64px"/>      | ชาเขียว   |
+| <img src="./img/wet/icecream.png" height="64px"/> | ไอศกรีม   |
 
 ### ขยะทั่วไป
-| ภาพ                                                  | ชื่อขยะ     |
-| ---------------------------------------------------- | --------- |
-| <img src="./img/general/plasticbag.png" height=64px> | ถุงพลาสติก  |
-| <img src="./img/general/ceramic.png" height=64px>    | จานเซรามิค |
-| <img src="./img/general/toothpaste.png" height=64px> | หลอดยาสีฟัน |
-| <img src="./img/general/rag.png" height=64px>        | ผ้าขี้ริ้ว     |
-| <img src="./img/general/pencil.png" height=64px>     | ดินสอ      |
+
+| ภาพ                                                     | ชื่อขยะ     |
+| ------------------------------------------------------- | ----------- |
+| <img src="./img/general/plasticbag.png" height="64px"/> | ถุงพลาสติก  |
+| <img src="./img/general/ceramic.png" height="64px"/>    | จานเซรามิค  |
+| <img src="./img/general/toothpaste.png" height="64px"/> | หลอดยาสีฟัน |
+| <img src="./img/general/rag.png" height="64px"/>        | ผ้าขี้ริ้ว  |
+| <img src="./img/general/pencil.png" height="64px"/>     | ดินสอ       |

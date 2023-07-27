@@ -1,4 +1,5 @@
 # Configuration File
+
 This object contains the settings to compute up the script.
 
 ::: tip PREVIEW
@@ -32,7 +33,7 @@ Default : 14
 How many steps of approval that you need.
 
 ::: danger DANGER
-Script currently supports 2 steps of approval.<br>
+Script currently supports 2 steps of approval.<br/>
 Dynamic steps is not being developed yet.
 :::
 
@@ -64,7 +65,7 @@ In the `start` key, type in string that is a column character (starts with A) th
 
 Similar to `stop` key, type in string that is the last column of the information range.
 
-A column that is in between (includes the `start` and `stop` ) is included* in the response summary table.
+A column that is in between (includes the `start` and `stop` ) is included\* in the response summary table.
 
 ### CONFIG.`approval_form_url`
 
