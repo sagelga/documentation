@@ -17,13 +17,13 @@
 
 หากผู้เล่นกดช้า/เร็วเกินไป หรือกดแยกประเภทไม่ถูกต้อง คะแนนที่จะได้จะถูกลดลงลดหลั่นกันไปตามแตกต่างระหว่างเวลาที่ให้กดและเวลาที่ผู้เล่นกด โดยเกมจะแสดงสถานะว่าผู้เล่นกดโน้ตเพลงนั้นแล้วได้กี่คะแนน
 
-| ภาพ                                                | ประเภท  | คะแนนที่ได้รับ |
-| -------------------------------------------------- | ------- | -------------- |
-| <img src="./img/score/perfect.png" height="64px"/> | Perfect | 8,000          |
-| <img src="./img/score/good.png" height="64px"/>    | Good    | 7,000          |
-| <img src="./img/score/cool.png" height="64px"/>    | Cool    | 5,000          |
-| <img src="./img/score/bad.png" height="64px"/>     | Bad     | 2,000          |
-| <img src="./img/score/missed.png" height="64px"/>  | Missed  | 0              |
+| ภาพ                                                 | ประเภท  | คะแนนที่ได้รับ |
+| --------------------------------------------------- | ------- | -------------- |
+| ![./img/score/perfect.png](./img/score/perfect.png) | Perfect | 8,000          |
+| ![./img/score/good.png](./img/score/good.png)       | Good    | 7,000          |
+| ![./img/score/cool.png](./img/score/cool.png)       | Cool    | 5,000          |
+| ![./img/score/bad.png](./img/score/bad.png)         | Bad     | 2,000          |
+| ![./img/score/missed.png](./img/score/missed.png)   | Missed  | 0              |
 
 ## หลอดเลือด
 
@@ -46,52 +46,53 @@
 ![](./img/Picture3.png)
 
 โดยเกณฑ์การให้เกรดนั้นมีดังนี้
+
 | เกรด | เปอร์เซนต์คะแนน |
 | ---- | --------------- |
-| A | > 90% |
-| B | > 65% และ < 90% |
-| C | > 50% และ < 65% |
-| D | > 40% และ < 50% |
-| F | < 40% |
+| A    | > 90%           |
+| B    | > 65% และ < 90% |
+| C    | > 50% และ < 65% |
+| D    | > 40% และ < 50% |
+| F    | < 40%           |
 
 ## ประเภทขยะ
 
 ### ขยะอันตราย
 
-| ภาพ                                                      | ชื่อขยะ        |
-| -------------------------------------------------------- | -------------- |
-| <img src="./img/dangerous/thinner.png" height="64px"/>   | ทินเนอร์       |
-| <img src="./img/dangerous/hairspray.png" height="64px"/> | สเปรย์ฉีดผม    |
-| <img src="./img/dangerous/lubricant.png" height="64px"/> | น้ำมันหล่อลื่น |
-| <img src="./img/dangerous/cigarette.png" height="64px"/> | บุหรี่         |
+| ภาพ                                                             | ชื่อขยะ        |
+| --------------------------------------------------------------- | -------------- |
+| ![./img/dangerous/thinner.png](./img/dangerous/thinner.png)     | ทินเนอร์       |
+| ![./img/dangerous/hairspray.png](./img/dangerous/hairspray.png) | สเปรย์ฉีดผม    |
+| ![./img/dangerous/lubricant.png](./img/dangerous/lubricant.png) | น้ำมันหล่อลื่น |
+| ![./img/dangerous/cigarette.png](./img/dangerous/cigarette.png) | บุหรี่         |
 
 ### ขยะรีไซเคิล
 
-| ภาพ                                                        | ชื่อขยะ       |
-| ---------------------------------------------------------- | ------------- |
-| <img src="./img/recycle/plasticbox.png" height="64px"/>    | ถาดพลาสติก    |
-| <img src="./img/recycle/paperscrap.png" height="64px"/>    | เศษกระดาษ     |
-| <img src="./img/recycle/plasticmug.png" height="64px"/>    | แก้วพลาสติก   |
-| <img src="./img/recycle/paper.png" height="64px"/>         | กระดาษใช้แล้ว |
-| <img src="./img/recycle/cartonbox.png" height="64px"/>     | กล่องลัง      |
-| <img src="./img/recycle/plasticbottle.png" height="64px"/> | ขวดพลาสติก    |
+| ภาพ                                                                 | ชื่อขยะ       |
+| ------------------------------------------------------------------- | ------------- |
+| ![./img/recycle/plasticbox.png](./img/recycle/plasticbox.png)       | ถาดพลาสติก    |
+| ![./img/recycle/paperscrap.png](./img/recycle/paperscrap.png)       | เศษกระดาษ     |
+| ![./img/recycle/plasticmug.png](./img/recycle/plasticmug.png)       | แก้วพลาสติก   |
+| ![./img/recycle/paper.png](./img/recycle/paper.png)                 | กระดาษใช้แล้ว |
+| ![./img/recycle/cartonbox.png](./img/recycle/cartonbox.png)         | กล่องลัง      |
+| ![./img/recycle/plasticbottle.png](./img/recycle/plasticbottle.png) | ขวดพลาสติก    |
 
 ### ขยะเปียก
 
 | ภาพ                                               | ชื่อขยะ   |
 | ------------------------------------------------- | --------- |
-| <img src="./img/wet/popcorn.png" height="64px"/>  | ป๊อปคอร์น |
-| <img src="./img/wet/donut.png" height="64px"/>    | โดนัท     |
-| <img src="./img/wet/curry.png" height="64px"/>    | แกงกะหรี่ |
-| <img src="./img/wet/tea.png" height="64px"/>      | ชาเขียว   |
-| <img src="./img/wet/icecream.png" height="64px"/> | ไอศกรีม   |
+| ![./img/wet/popcorn.png](./img/wet/popcorn.png)   | ป๊อปคอร์น |
+| ![./img/wet/donut.png](./img/wet/donut.png)       | โดนัท     |
+| ![./img/wet/curry.png](./img/wet/curry.png)       | แกงกะหรี่ |
+| ![./img/wet/tea.png](./img/wet/tea.png)           | ชาเขียว   |
+| ![./img/wet/icecream.png](./img/wet/icecream.png) | ไอศกรีม   |
 
 ### ขยะทั่วไป
 
-| ภาพ                                                     | ชื่อขยะ     |
-| ------------------------------------------------------- | ----------- |
-| <img src="./img/general/plasticbag.png" height="64px"/> | ถุงพลาสติก  |
-| <img src="./img/general/ceramic.png" height="64px"/>    | จานเซรามิค  |
-| <img src="./img/general/toothpaste.png" height="64px"/> | หลอดยาสีฟัน |
-| <img src="./img/general/rag.png" height="64px"/>        | ผ้าขี้ริ้ว  |
-| <img src="./img/general/pencil.png" height="64px"/>     | ดินสอ       |
+| ภาพ                                                           | ชื่อขยะ     |
+| ------------------------------------------------------------- | ----------- |
+| ![./img/general/plasticbag.png](./img/general/plasticbag.png) | ถุงพลาสติก  |
+| ![./img/general/ceramic.png](./img/general/ceramic.png)       | จานเซรามิค  |
+| ![./img/general/toothpaste.png](./img/general/toothpaste.png) | หลอดยาสีฟัน |
+| ![./img/general/rag.png](./img/general/rag.png)               | ผ้าขี้ริ้ว  |
+| ![./img/general/pencil.png](./img/general/pencil.png)         | ดินสอ       |

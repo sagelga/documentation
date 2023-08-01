@@ -16,25 +16,21 @@ We are from Information Technology, King Mongkut Institute of Technology Ladkrab
 
 วิชา การสร้างโปรแกรมเว็บ
 
-![avt300][prof_web_prog]
+![](./img/web_prog.jpg)
 
 -   อ.สุพัณณดา โชติพันธ์
 
 วิชา การวิเคราะห์และออกแบบระบบสารสนเทศ
 
-![avt300][prof_isad]
+![](./img/isad.png)
 
 -   ผศ.ดร. มานพ พันธ์โคกกรวด
 -   ผศ.ดร. บุญประเสริฐ สุรักษ์รัตนสกุล
 
 วิชา แนวคิดระบบฐานข้อมูล
 
-![avt300][prof_database]
+![](./img/database.jpg)
 
 -   อาจารย์ ศรีนวล นลินทิพย์วงศ์
 -   ผศ.ดร. ภัทรชัย ลลิตโรจน์วงศ์
 -   ผศ.ดร.กนกวรรณ อัจฉริยะชาญวณิช
-
-[prof_web_prog]: ./img/web_prog.jpg 'Teacher'
-[prof_isad]: ./img/isad.png 'Teacher'
-[prof_database]: ./img/database.jpg 'Teacher'

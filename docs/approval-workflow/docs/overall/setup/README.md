@@ -82,7 +82,7 @@ To create a target form (form that will **digest in** an approval request) and l
    ![](./src/forms3.png)
 4. After you complete adding questions to the script, go to 'Response'
    ![](./src/forms4.png)
-5. Click 'More' button (<img src="./src/outline_more_vert_black_24dp.png" style="height:1em"/>), next to a Sheet button (<img src="./src/sheetsIcon.png" style="height:1em"/>)
+5. Click 'More' button (<img src="./src/outline_more_vert_black_24dp.png" style={{height:'1em'}}/>), next to a Sheet button (<img src="./src/sheetsIcon.png" style={{height:'1em'}}/>)
    ![](./src/forms5.png)
 6. Click 'Select response destination'. There will be two options for you to choose from.
     - Select 'Create a new spreadsheet' if you start using this script for the first time.
@@ -102,7 +102,7 @@ To create a target form (form that will **digest in** an approval request) and l
     - (Recommend) use Dropdown to let user respond to avoid unintentional approval/decline of the request.
 4. After you complete adding questions to the script, go to 'Response'
    ![](./src/forms4.png)
-5. Click 'More' button (<img src="./src/outline_more_vert_black_24dp.png" style="height:1em"/>), next to a Sheet button (<img src="./src/sheetsIcon.png" style="height:1em"/>)
+5. Click 'More' button (<img src="./src/outline_more_vert_black_24dp.png" style={{height:'1em'}}/>), next to a Sheet button (<img src="./src/sheetsIcon.png" style={{height:'1em'}}/>)
    ![](./src/forms5.png)
 6. Click 'Select response destination' → 'Select existing spreadsheet'.
    ![](./src/forms6.png)
