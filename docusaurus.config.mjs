@@ -33,8 +33,13 @@ const config = {
     projectName: CONFIG_TITLE.projectName, // Usually your repo name.
 
     onBrokenLinks: 'log',
-    onBrokenMarkdownLinks: 'log',
     onDuplicateRoutes: 'log',
+
+    markdown: {
+        hooks: {
+            onBrokenMarkdownLinks: 'log',
+        },
+    },
 
     // Even if you don't use internalization, you can use this field to set useful
     // metadata like html lang. For example, if your site is Chinese, you may want
