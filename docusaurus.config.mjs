@@ -1,8 +1,9 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-const lightCodeTheme = require('prism-react-renderer/themes/github');
-const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+import {themes} from 'prism-react-renderer';
+const lightCodeTheme = themes.github;
+const darkCodeTheme = themes.dracula;
 
 const CONFIG_TITLE = {
     title: 'Documentation',
@@ -10,6 +11,9 @@ const CONFIG_TITLE = {
     orgName: 'sagelga',
     projectName: 'documentation',
 };
+
+import math from 'remark-math';
+import katex from 'rehype-katex';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -46,7 +50,7 @@ const config = {
             /** @type {import('@docusaurus/preset-classic').Options} */
             ({
                 docs: {
-                    sidebarPath: require.resolve('./sidebars.js'),
+                    sidebarPath: './sidebars.js',
                     // Please change this to your repo.
                     // Remove this to remove the "edit this page" links.
                     editUrl:
@@ -55,6 +59,8 @@ const config = {
                         '/' +
                         CONFIG_TITLE.projectName +
                         '/tree/main/',
+                    remarkPlugins: [math],
+                    rehypePlugins: [katex],
                 },
                 blog: false,
                 // {
@@ -65,10 +71,20 @@ const config = {
                 //         'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
                 // },
                 theme: {
-                    customCss: require.resolve('./src/css/custom.css'),
+                    customCss: './src/css/custom.css',
                 },
             }),
         ],
+    ],
+
+    stylesheets: [
+        {
+            href: 'https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css',
+            type: 'text/css',
+            integrity:
+                'sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM',
+            crossorigin: 'anonymous',
+        },
     ],
 
     themeConfig:
@@ -188,4 +204,4 @@ const config = {
         }),
 };
 
-module.exports = config;
+export default config;
