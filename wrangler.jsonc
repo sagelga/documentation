@@ -2,13 +2,5 @@
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "documentation",
   "compatibility_date": "2026-02-09",
-  "account_id": "9124272a5c3e327f2e943bf27c0910c4",
-  "assets": {
-    "directory": "./build"
-  },
-  "observability": {
-    "enabled": true,
-    "head_sampling_rate": 1 // optional. default = 1.
-  },
-  "placement": {"mode": "smart"}
+  "pages_build_output_dir": "./build"
 }
