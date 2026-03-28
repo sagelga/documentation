@@ -1,23 +1,187 @@
-/**
- * CSS files with the .module.css suffix will be treated as CSS modules
- * and scoped locally.
- */
+/* ── Easing tokens ─────────────────────────────────────────────── */
 
-.heroBanner {
-  padding: 4rem 0;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
+:root {
+  --ease-out-quart: cubic-bezier(0.25, 1, 0.5, 1);
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-@media screen and (max-width: 996px) {
-  .heroBanner {
-    padding: 2rem;
+/* ── Hero ──────────────────────────────────────────────────────── */
+
+.hero {
+  padding: 3rem 0 1.5rem;
+  border-bottom: 1px solid var(--ifm-toc-border-color);
+  margin-bottom: 2rem;
+}
+
+.heroTitle {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  animation: heroFadeIn 600ms var(--ease-out-quart) both;
+}
+
+.heroSubtitle {
+  font-size: 1.1rem;
+  color: var(--ifm-color-emphasis-700);
+  margin-bottom: 0;
+  max-width: 540px;
+  animation: heroFadeIn 600ms var(--ease-out-quart) 80ms both;
+}
+
+@keyframes heroFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
-.buttons {
+/* ── Sections (scroll-revealed via JS) ─────────────────────────── */
+
+.section {
+  margin-bottom: 3rem;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 500ms var(--ease-out-quart),
+              transform 500ms var(--ease-out-quart);
+}
+
+.sectionVisible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.sectionTitle {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.sectionDescription {
+  font-size: 0.95rem;
+  color: var(--ifm-color-emphasis-600);
+  margin-bottom: 1rem;
+}
+
+/* ── Card grid ─────────────────────────────────────────────────── */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1rem;
+}
+
+/* ── Cards ─────────────────────────────────────────────────────── */
+
+.card {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
+  padding: 1.25rem;
+  border: 1px solid var(--ifm-toc-border-color);
+  border-radius: 6px;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 250ms var(--ease-out-quart),
+              border-color 250ms var(--ease-out-quart),
+              box-shadow 250ms var(--ease-out-quart);
+
+  /* Staggered entrance: set by inline --i from JS */
+  opacity: 0;
+  animation: cardIn 450ms var(--ease-out-expo) both;
+  animation-delay: calc(var(--i, 0) * 60ms);
+}
+
+.card:hover {
+  border-color: var(--ifm-color-secondary, var(--ifm-color-primary));
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  text-decoration: none;
+  color: inherit;
+}
+
+.card:active {
+  transform: translateY(-1px);
+  transition-duration: 80ms;
+}
+
+[data-theme='dark'] .card:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes cardIn {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.cardTitle {
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+  transition: color 200ms var(--ease-out-quart);
+}
+
+.card:hover .cardTitle {
+  color: var(--ifm-color-primary);
+}
+
+[data-theme='dark'] .card:hover .cardTitle {
+  color: var(--ifm-color-secondary);
+}
+
+.cardDescription {
+  font-size: 0.9rem;
+  color: var(--ifm-color-emphasis-700);
+  margin-bottom: 0.75rem;
+  flex: 1;
+}
+
+.cardTech {
+  font-size: 0.8rem;
+  font-family: var(--ifm-font-family-monospace);
+  color: var(--ifm-color-emphasis-500);
+}
+
+/* ── Responsive ────────────────────────────────────────────────── */
+
+@media screen and (max-width: 600px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .heroTitle {
+    font-size: 1.8rem;
+  }
+}
+
+/* ── Reduced motion ────────────────────────────────────────────── */
+
+@media (prefers-reduced-motion: reduce) {
+  .heroTitle,
+  .heroSubtitle {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+
+  .section {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  .card {
+    animation: none;
+    opacity: 1;
+    transform: none;
+    transition: border-color 0.01ms, box-shadow 0.01ms, transform 0.01ms;
+  }
 }

@@ -1,38 +1,82 @@
-/**
- * Any CSS included here will be global. The classic template
- * bundles Infima by default. Infima is a CSS framework designed to
- * work well for content-centric websites.
- */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped:wght@400;500;600;700&family=JetBrains+Mono&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped:wght@400;500&family=JetBrains+Mono&display=swap');
-
-/* You can override the default Infima variables here. */
 :root {
-    --ifm-color-primary: #2e8555;
-    --ifm-color-primary-dark: #29784c;
-    --ifm-color-primary-darker: #277148;
-    --ifm-color-primary-darkest: #205d3b;
-    --ifm-color-primary-light: #33925d;
-    --ifm-color-primary-lighter: #359962;
-    --ifm-color-primary-lightest: #3cad6e;
+    /* sagelga.com brand: signature indigo #3B4A8C */
+    --ifm-color-primary: #3B4A8C;
+    --ifm-color-primary-dark: #35427E;
+    --ifm-color-primary-darker: #313E77;
+    --ifm-color-primary-darkest: #283362;
+    --ifm-color-primary-light: #42539A;
+    --ifm-color-primary-lighter: #4758A0;
+    --ifm-color-primary-lightest: #5768B2;
+
+    /* sagelga.com brand: amber accent #C9943A */
+    --ifm-color-secondary: #C9943A;
+
     --ifm-code-font-size: 95%;
-    --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
     --ifm-font-family-base: 'IBM Plex Sans Thai Looped', system-ui,
         -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans,
         sans-serif, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif,
         'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
     --ifm-font-family-monospace: 'JetBrains Mono', SFMono-Regular, Menlo, Monaco,
         Consolas, 'Liberation Mono', 'Courier New', monospace;
+    --ifm-heading-font-weight: 600;
+    --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
+/* Dark mode: sagelga.com warm dark palette */
 [data-theme='dark'] {
-    --ifm-color-primary: #25c2a0;
-    --ifm-color-primary-dark: #21af90;
-    --ifm-color-primary-darker: #1fa588;
-    --ifm-color-primary-darkest: #1a8870;
-    --ifm-color-primary-light: #29d5b0;
-    --ifm-color-primary-lighter: #32d8b4;
-    --ifm-color-primary-lightest: #4fddbf;
+    --ifm-color-primary: #7E8EC9;
+    --ifm-color-primary-dark: #6D80C0;
+    --ifm-color-primary-darker: #657ABD;
+    --ifm-color-primary-darkest: #4C64AF;
+    --ifm-color-primary-light: #8F9CD2;
+    --ifm-color-primary-lighter: #97A3D5;
+    --ifm-color-primary-lightest: #B0B9E0;
+
+    --ifm-background-color: #1A1814;
+    --ifm-background-surface-color: #252219;
+    --ifm-color-secondary: #C9943A;
+    --ifm-font-color-base: #F0EAD6;
+    --ifm-color-emphasis-300: #302C24;
+    --ifm-color-emphasis-600: #9A9485;
+    --ifm-toc-border-color: #302C24;
+    --ifm-hr-border-color: #302C24;
     --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+/* Navbar: brand indigo background */
+.navbar {
+    background-color: #3B4A8C;
+    --ifm-navbar-link-color: #F0EAD6;
+    --ifm-navbar-link-hover-color: #C9943A;
+}
+
+.navbar__title {
+    color: #F0EAD6;
+}
+
+.navbar__toggle {
+    color: #F0EAD6;
+}
+
+/* Amber accent on links hover */
+a:hover {
+    color: var(--ifm-color-secondary);
+}
+
+/* Navbar uses brand indigo background in dark mode */
+[data-theme='dark'] .navbar {
+    background-color: #252219;
+    border-bottom: 1px solid #302C24;
+}
+
+/* Footer matches canvas */
+[data-theme='dark'] .footer--dark {
+    background-color: #1A1814;
+}
+
+/* Card borders use rim color in dark mode */
+[data-theme='dark'] .card {
+    border-color: #302C24;
 }
