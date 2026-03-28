@@ -77,8 +77,6 @@ export default function Footer(): React.ReactElement {
             © 2021–{new Date().getFullYear()} sagelga
           </span>
 
-          <span className="footer-domain">docs.sagelga.com</span>
-
           <div className="footer-bottom-right">
             <div className="footer-controls">
               <button
