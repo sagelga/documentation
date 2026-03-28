@@ -45,7 +45,10 @@ export default function Footer(): React.ReactElement {
             <a href="https://sagelga.com" className="footer-logo-text">
               sagelga
             </a>
-            <p className="footer-tagline">Documentation by sagelga</p>
+            <p className="footer-tagline">
+              <span className="footer-tagline-product">Documentation</span>{' '}
+              <span className="footer-tagline-by">by sagelga</span>
+            </p>
           </div>
           <div className="footer-columns">
             {COLUMNS.map((col) => (
