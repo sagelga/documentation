@@ -1,0 +1,121 @@
+.custom-footer {
+  background: #0a0a0a;
+  color: #9ca3af;
+  font-size: 0.875rem;
+  line-height: 1.6;
+  padding: 3rem 0 0;
+  font-family: 'IBM Plex Sans Thai Looped', system-ui, sans-serif;
+}
+
+.custom-footer__container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.custom-footer__top {
+  display: flex;
+  gap: 4rem;
+  padding-bottom: 2.5rem;
+}
+
+.custom-footer__brand {
+  flex: 0 0 280px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.custom-footer__logo-text {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #fff !important;
+  letter-spacing: -0.03em;
+  text-decoration: none !important;
+}
+
+.custom-footer__tagline {
+  margin: 0;
+  color: #9ca3af;
+  font-size: 0.875rem;
+  line-height: 1.65;
+}
+
+.custom-footer__columns {
+  flex: 1;
+  display: flex;
+  gap: 3rem;
+  justify-content: flex-end;
+}
+
+.custom-footer__col {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  min-width: 120px;
+}
+
+.custom-footer__col-title {
+  margin: 0 0 0.25rem;
+  color: #ffffff;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.custom-footer__col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.custom-footer__col a {
+  color: #9ca3af !important;
+  text-decoration: none !important;
+  transition: color 0.15s ease;
+}
+
+.custom-footer__col a:hover {
+  color: #ffffff !important;
+}
+
+.custom-footer__divider {
+  border: none;
+  border-top: 1px solid #1f1f1f;
+  margin: 0;
+}
+
+.custom-footer__bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.25rem 0;
+  font-size: 0.8rem;
+  color: #9ca3af;
+  gap: 1rem;
+}
+
+.custom-footer__bottom-center {
+  text-align: center;
+}
+
+@media (max-width: 900px) {
+  .custom-footer__top { flex-direction: column; gap: 2rem; }
+  .custom-footer__brand { flex: unset; }
+  .custom-footer__columns { justify-content: flex-start; gap: 2rem; flex-wrap: wrap; }
+}
+
+@media (max-width: 640px) {
+  .custom-footer__bottom { flex-direction: column; align-items: flex-start; gap: 0.5rem; }
+  .custom-footer__bottom-center { text-align: left; }
+}
+
+@media (max-width: 480px) {
+  .custom-footer__container { padding: 0 1rem; }
+  .custom-footer__columns { gap: 1.25rem; }
+  .custom-footer__col { min-width: 0; }
+}

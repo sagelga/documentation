@@ -8,23 +8,26 @@
 /* ── Hero ──────────────────────────────────────────────────────── */
 
 .hero {
-  padding: 3rem 0 1.5rem;
+  padding: 5rem 0 3rem;
   border-bottom: 1px solid var(--ifm-toc-border-color);
-  margin-bottom: 2rem;
+  margin-bottom: 3.5rem;
 }
 
 .heroTitle {
-  font-size: 2.2rem;
+  font-size: clamp(2.4rem, 5vw, 3.5rem);
   font-weight: 700;
-  margin-bottom: 0.5rem;
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+  margin-bottom: 0.75rem;
   animation: heroFadeIn 600ms var(--ease-out-quart) both;
 }
 
 .heroSubtitle {
-  font-size: 1.1rem;
+  font-size: clamp(1rem, 2vw, 1.15rem);
   color: var(--ifm-color-emphasis-700);
   margin-bottom: 0;
-  max-width: 540px;
+  max-width: 600px;
+  line-height: 1.6;
   animation: heroFadeIn 600ms var(--ease-out-quart) 80ms both;
 }
 
@@ -39,38 +42,62 @@
   }
 }
 
-/* ── Sections (scroll-revealed via JS) ─────────────────────────── */
+/* ── Sections ───────────────────────────────────────────────────── */
 
 .section {
-  margin-bottom: 3rem;
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 500ms var(--ease-out-quart),
-              transform 500ms var(--ease-out-quart);
+  margin-bottom: 4.5rem;
+  animation: sectionIn 500ms var(--ease-out-quart) both;
+  animation-delay: calc(var(--i-section, 0) * 100ms);
 }
 
-.sectionVisible {
-  opacity: 1;
-  transform: translateY(0);
+@keyframes sectionIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Group number + title on the same baseline */
+.sectionHeader {
+  display: flex;
+  align-items: baseline;
+  gap: 0.75rem;
+  margin-bottom: 0.4rem;
+}
+
+.sectionIndex {
+  font-size: 0.72rem;
+  font-weight: 600;
+  font-family: var(--ifm-font-family-monospace);
+  color: var(--ifm-color-secondary);
+  letter-spacing: 0.06em;
+  flex-shrink: 0;
 }
 
 .sectionTitle {
-  font-size: 1.3rem;
-  font-weight: 600;
-  margin-bottom: 0.25rem;
+  font-size: clamp(1.3rem, 2.5vw, 1.55rem);
+  font-weight: 700;
+  letter-spacing: -0.015em;
+  line-height: 1.2;
+  margin-bottom: 0;
 }
 
 .sectionDescription {
   font-size: 0.95rem;
-  color: var(--ifm-color-emphasis-600);
-  margin-bottom: 1rem;
+  color: var(--ifm-color-emphasis-800);
+  margin-bottom: 1.25rem;
+  max-width: 640px;
 }
 
 /* ── Card grid ─────────────────────────────────────────────────── */
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
   gap: 1rem;
 }
 
@@ -88,10 +115,15 @@
               border-color 250ms var(--ease-out-quart),
               box-shadow 250ms var(--ease-out-quart);
 
-  /* Staggered entrance: set by inline --i from JS */
   opacity: 0;
   animation: cardIn 450ms var(--ease-out-expo) both;
   animation-delay: calc(var(--i, 0) * 60ms);
+}
+
+/* First card in each group spans 2 columns — breaks the uniform grid */
+.cardFeatured {
+  grid-column: span 2;
+  padding: 1.75rem;
 }
 
 .card:hover {
@@ -129,6 +161,13 @@
   transition: color 200ms var(--ease-out-quart);
 }
 
+/* Featured card gets a weightier title to justify its wider span */
+.cardFeatured .cardTitle {
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
 .card:hover .cardTitle {
   color: var(--ifm-color-primary);
 }
@@ -144,21 +183,57 @@
   flex: 1;
 }
 
+.cardFooter {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.techIcons {
+  display: flex;
+  gap: 0.35rem;
+  align-items: center;
+}
+
+.techIcon {
+  display: block;
+  border-radius: 2px;
+  opacity: 0.88;
+}
+
+[data-theme='dark'] .techIcon {
+  filter: brightness(0) invert(0.82);
+}
+
 .cardTech {
   font-size: 0.8rem;
   font-family: var(--ifm-font-family-monospace);
-  color: var(--ifm-color-emphasis-500);
+  color: var(--ifm-color-emphasis-700);
 }
 
 /* ── Responsive ────────────────────────────────────────────────── */
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   .grid {
     grid-template-columns: 1fr;
   }
 
+  .cardFeatured {
+    grid-column: span 1;
+    padding: 1.25rem;
+  }
+
   .heroTitle {
-    font-size: 1.8rem;
+    font-size: 2rem;
+  }
+
+  .hero {
+    padding: 3.5rem 0 2rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .section {
+    margin-bottom: 3rem;
   }
 }
 
@@ -166,22 +241,15 @@
 
 @media (prefers-reduced-motion: reduce) {
   .heroTitle,
-  .heroSubtitle {
-    animation: none;
-    opacity: 1;
-    transform: none;
-  }
-
-  .section {
-    opacity: 1;
-    transform: none;
-    transition: none;
-  }
-
+  .heroSubtitle,
+  .section,
   .card {
     animation: none;
     opacity: 1;
     transform: none;
+  }
+
+  .card {
     transition: border-color 0.01ms, box-shadow 0.01ms, transform 0.01ms;
   }
 }

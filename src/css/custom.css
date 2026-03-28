@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped:wght@400;500;600;700&family=JetBrains+Mono&display=swap');
+/* Fonts are loaded via headTags in docusaurus.config.mjs with preconnect for performance */
 
 :root {
     /* sagelga.com brand: signature indigo #3B4A8C */
@@ -14,7 +14,7 @@
     --ifm-color-secondary: #C9943A;
 
     --ifm-code-font-size: 95%;
-    --ifm-font-family-base: 'IBM Plex Sans Thai Looped', system-ui,
+    --ifm-font-family-base: 'IBM Plex Sans Thai', system-ui,
         -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans,
         sans-serif, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif,
         'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
@@ -45,11 +45,15 @@
     --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 
-/* Navbar: brand indigo background */
+/* ── Navbar: two-row layout ─────────────────────────────── */
 .navbar {
     background-color: #3B4A8C;
-    --ifm-navbar-link-color: #F0EAD6;
-    --ifm-navbar-link-hover-color: #C9943A;
+    --ifm-navbar-link-color: rgba(255, 255, 255, 0.78);
+    --ifm-navbar-link-hover-color: #ffffff;
+    height: auto !important;
+    padding: 0 !important;
+    flex-direction: column !important;
+    align-items: stretch !important;
 }
 
 .navbar__title {
@@ -60,15 +64,111 @@
     color: #F0EAD6;
 }
 
-/* Amber accent on links hover */
+/* Top row */
+.nb-top {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.nb-top__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    height: var(--ifm-navbar-height, 3.75rem);
+}
+
+.nb-top__left {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.nb-top__right {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+/* Ensure dark-mode toggle meets 44px touch target (WCAG 2.5.5) */
+.nb-top__right button.clean-btn {
+    min-width: 44px;
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Bottom row */
+.nb-bottom {
+    background: rgba(0, 0, 0, 0.15);
+}
+
+.nb-bottom__inner {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+}
+
+/* Nav links in bottom row: border-bottom indicator style */
+.nb-bottom .navbar__item.navbar__link,
+.nb-bottom .dropdown > .navbar__link {
+    padding: 0.6rem 1rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    border-bottom: 2px solid transparent;
+    border-radius: 0;
+    white-space: nowrap;
+    letter-spacing: 0.2px;
+    transition: color 0.15s ease, border-color 0.15s ease, background 0.15s ease;
+}
+
+.nb-bottom .navbar__item.navbar__link:hover,
+.nb-bottom .dropdown > .navbar__link:hover,
+.nb-bottom .dropdown:hover > .navbar__link {
+    color: #ffffff !important;
+    border-bottom-color: rgba(255, 255, 255, 0.45);
+    background: transparent !important;
+}
+
+.nb-bottom .navbar__item.navbar__link--active,
+.nb-bottom .dropdown > .navbar__link--active {
+    color: #ffffff !important;
+    border-bottom-color: #ffffff !important;
+    font-weight: 700;
+    background: transparent !important;
+}
+
+/* Dropdown reveal — fade + slide */
+.dropdown__menu {
+    transition: opacity 200ms cubic-bezier(0.25, 1, 0.5, 1),
+                transform 200ms cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+/* Amber accent on body links hover */
 a:hover {
     color: var(--ifm-color-secondary);
 }
 
-/* Navbar uses brand indigo background in dark mode */
+/* Navbar dark mode */
 [data-theme='dark'] .navbar {
     background-color: #252219;
     border-bottom: 1px solid #302C24;
+}
+
+/* Hide bottom row on mobile — sidebar handles nav items */
+@media (max-width: 996px) {
+    .nb-bottom { display: none; }
+    .nb-top__inner { padding: 0 1.5rem; }
+}
+
+/* Dark mode dropdown — warm palette to match canvas */
+[data-theme='dark'] {
+    --ifm-dropdown-background-color: #2D2922;
+    --ifm-dropdown-border-color: #302C24;
 }
 
 /* Footer matches canvas */
@@ -79,4 +179,131 @@ a:hover {
 /* Card borders use rim color in dark mode */
 [data-theme='dark'] .card {
     border-color: #302C24;
+}
+
+/* ── Footer ─────────────────────────────────────────────── */
+
+/* Hover nudge — mirrors the sidebar link pattern */
+.footer__link-item {
+    display: inline-block;
+    transition: color 150ms var(--ease-out-quart, cubic-bezier(0.25, 1, 0.5, 1)),
+                transform 150ms var(--ease-out-quart, cubic-bezier(0.25, 1, 0.5, 1));
+}
+
+.footer__link-item:hover {
+    transform: translateX(2px);
+}
+
+/* ── Sidebar ────────────────────────────────────────────── */
+
+/* Subtle divider between sidebar and content */
+.theme-doc-sidebar-container {
+    border-right: 1px solid rgba(59, 74, 140, 0.12);
+}
+
+/* Smooth transitions on all sidebar links */
+.menu__link {
+    border-radius: 6px;
+    transition: background 150ms var(--ease-out-quart, cubic-bezier(0.25, 1, 0.5, 1)),
+                color 150ms var(--ease-out-quart, cubic-bezier(0.25, 1, 0.5, 1)),
+                box-shadow 150ms var(--ease-out-quart, cubic-bezier(0.25, 1, 0.5, 1)),
+                transform 150ms var(--ease-out-quart, cubic-bezier(0.25, 1, 0.5, 1));
+}
+
+/* Category section headers — uppercase label style */
+.menu__link--sublist {
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: rgba(59, 74, 140, 0.6);
+}
+
+/* Leaf page link hover — tint + left indicator + rightward nudge */
+.menu__link:not(.menu__link--sublist):hover {
+    background: rgba(59, 74, 140, 0.06);
+    color: var(--ifm-color-primary);
+    box-shadow: inset 3px 0 0 rgba(59, 74, 140, 0.3);
+    transform: translateX(2px);
+}
+
+/* Category hover */
+.menu__link--sublist:hover {
+    background: rgba(59, 74, 140, 0.04);
+    color: rgba(59, 74, 140, 0.8);
+}
+
+/* Active leaf link — amber left accent */
+.menu__link--active:not(.menu__link--sublist) {
+    background: rgba(59, 74, 140, 0.07);
+    color: var(--ifm-color-primary);
+    font-weight: 600;
+    box-shadow: inset 3px 0 0 #C9943A;
+}
+
+/* Dark mode sidebar */
+[data-theme='dark'] .theme-doc-sidebar-container {
+    border-right-color: #302C24;
+}
+
+[data-theme='dark'] .menu__link--sublist {
+    color: rgba(154, 148, 133, 0.85);
+}
+
+[data-theme='dark'] .menu__link:not(.menu__link--sublist):hover {
+    background: rgba(126, 142, 201, 0.08);
+    color: var(--ifm-color-primary);
+    box-shadow: inset 3px 0 0 rgba(126, 142, 201, 0.35);
+}
+
+[data-theme='dark'] .menu__link--sublist:hover {
+    background: rgba(126, 142, 201, 0.05);
+    color: #9A9485;
+}
+
+[data-theme='dark'] .menu__link--active:not(.menu__link--sublist) {
+    background: rgba(126, 142, 201, 0.1);
+    color: var(--ifm-color-primary);
+    box-shadow: inset 3px 0 0 #C9943A;
+}
+
+/* Smooth caret rotation on expand / collapse */
+.menu__caret {
+    transition: transform 200ms var(--ease-out-quart, cubic-bezier(0.25, 1, 0.5, 1));
+}
+
+.menu__caret::before {
+    transition: transform 200ms var(--ease-out-quart, cubic-bezier(0.25, 1, 0.5, 1));
+}
+
+/* ── Table of Contents ──────────────────────────────────── */
+
+/* Smooth active-heading transition as the user scrolls */
+.table-of-contents__link {
+    transition: color 200ms var(--ease-out-quart, cubic-bezier(0.25, 1, 0.5, 1)),
+                font-weight 200ms var(--ease-out-quart, cubic-bezier(0.25, 1, 0.5, 1));
+}
+
+.table-of-contents__link:hover {
+    color: var(--ifm-color-primary);
+    text-decoration: none;
+}
+
+[data-theme='dark'] .table-of-contents__link:hover {
+    color: var(--ifm-color-primary);
+}
+
+/* ── Reduced motion ─────────────────────────────────────── */
+
+@media (prefers-reduced-motion: reduce) {
+    .navbar__link,
+    .dropdown__menu,
+    .footer__link-item,
+    .menu__link,
+    .menu__caret,
+    .menu__caret::before,
+    .table-of-contents__link {
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+    }
 }

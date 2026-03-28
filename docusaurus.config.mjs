@@ -51,15 +51,34 @@ const config = {
         ],
     ],
 
-    stylesheets: [
+    headTags: [
+        // Preconnect for Google Fonts — eliminates the @import chain delay
+        { tagName: 'link', attributes: { rel: 'preconnect', href: 'https://fonts.googleapis.com' } },
+        { tagName: 'link', attributes: { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: 'anonymous' } },
         {
-            href: 'https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css',
-            type: 'text/css',
-            integrity:
-                'sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM',
-            crossorigin: 'anonymous',
+            tagName: 'link',
+            attributes: {
+                rel: 'preload',
+                as: 'style',
+                href: 'https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@400;500;600;700&family=JetBrains+Mono&display=swap',
+                onload: "this.rel='stylesheet'",
+            },
+        },
+        // KaTeX — load non-blocking via media trick, applied once loaded
+        {
+            tagName: 'link',
+            attributes: {
+                rel: 'preload',
+                as: 'style',
+                href: 'https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css',
+                integrity: 'sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM',
+                crossorigin: 'anonymous',
+                onload: "this.rel='stylesheet'",
+            },
         },
     ],
+
+    stylesheets: [],
 
     themeConfig:
         /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
@@ -67,6 +86,15 @@ const config = {
             navbar: {
                 title: 'sagelga docs',
                 items: [
+                    {
+                        type: 'dropdown',
+                        label: 'ByteSide',
+                        position: 'left',
+                        items: [
+                            {to: 'docs/byteside', label: 'ByteSide'},
+                            {to: 'docs/byteside-retriever', label: 'ByteSide Retriever'},
+                        ],
+                    },
                     {
                         type: 'dropdown',
                         label: 'Legacy',
@@ -104,6 +132,16 @@ const config = {
                     },
                     {
                         type: 'dropdown',
+                        label: 'sagelga.com',
+                        position: 'left',
+                        items: [
+                            {to: 'docs/super', label: 'sagelga.com'},
+                            {to: 'docs/superbrain', label: 'SuperBrain'},
+                            {to: 'docs/supereye', label: 'SuperEye'},
+                        ],
+                    },
+                    {
+                        type: 'dropdown',
                         label: 'Web Apps',
                         position: 'left',
                         items: [
@@ -120,7 +158,6 @@ const config = {
             },
             footer: {
                 style: 'dark',
-                copyright: `Copyright 2016 - ${new Date().getFullYear()} @sagelga`,
             },
             prism: {
                 theme: lightCodeTheme,
