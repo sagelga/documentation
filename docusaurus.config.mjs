@@ -8,7 +8,7 @@ import katex from 'rehype-katex';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-    title: 'sagelga docs',
+    title: "sagelga's docs",
     tagline: 'Project documentation and technical references',
     favicon: 'img/favicon.ico',
 
@@ -83,8 +83,11 @@ const config = {
     themeConfig:
         /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
         ({
+            colorMode: {
+                disableSwitch: true,
+            },
             navbar: {
-                title: 'sagelga docs',
+                title: "sagelga's docs",
                 items: [
                     {
                         type: 'dropdown',
@@ -148,11 +151,6 @@ const config = {
                             {to: 'docs/mahjong-hands', label: 'Mahjong Hands'},
                             {to: 'docs/redirect', label: 'Redirect'},
                         ],
-                    },
-                    {
-                        href: 'https://github.com/sagelga/documentation',
-                        label: 'GitHub',
-                        position: 'right',
                     },
                 ],
             },
